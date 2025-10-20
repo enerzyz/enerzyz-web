@@ -68,11 +68,7 @@ export function CodeShowcase() {
               Enerzyz CLI
             </span>
           </div>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-6">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-            <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-white/40 to-transparent" />
-            <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-r from-transparent via-sky-400/10 to-transparent" />
-            <div className="pointer-events-none absolute inset-x-[-40%] top-1/2 h-[2px] rotate-[-8deg] bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-50" />
+          <div className="relative overflow-hidden rounded-2xl bg-black/60 p-6">
             <code className="space-y-4 text-sm text-white/80">
               {codeLines.map((line, index) => (
                 <motion.div
