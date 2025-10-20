@@ -5,9 +5,9 @@
   --background: #040513;
   --background-alt: #05091f;
   --foreground: #f4f8ff;
-  --accent-primary: #5dffbc;
-  --accent-secondary: #58b3ff;
-  --accent-tertiary: #c38bff;
+  --accent-primary: #5eaaff;
+  --accent-secondary: #3f86ff;
+  --accent-tertiary: #7f9bff;
   --surface: rgba(9, 14, 31, 0.9);
   --glow: rgba(88, 179, 255, 0.35);
   --shadow-card: 0 20px 70px rgba(9, 18, 46, 0.28);
@@ -17,8 +17,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(120% 120% at 90% 10%, rgba(88, 179, 255, 0.18), transparent 50%),
-    radial-gradient(100% 100% at 5% 80%, rgba(93, 255, 188, 0.24), transparent 55%),
+  radial-gradient(120% 120% at 90% 10%, rgba(88, 179, 255, 0.2), transparent 50%),
+  radial-gradient(100% 100% at 5% 80%, rgba(94, 181, 255, 0.3), transparent 55%),
     linear-gradient(160deg, var(--background) 0%, #02030a 45%, var(--background-alt) 100%);
   color: var(--foreground);
   font-family: var(--font-space-grotesk), system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  background: rgba(93, 255, 188, 0.35);
+  background: rgba(94, 181, 255, 0.35);
   color: #020511;
 }
 
@@ -54,7 +54,7 @@ body {
   }
   50% {
     color: rgba(244, 248, 255, 0.98);
-    text-shadow: 0 0 30px rgba(93, 255, 188, 0.55);
+  text-shadow: 0 0 30px rgba(94, 181, 255, 0.55);
   }
 }
 
@@ -137,7 +137,7 @@ body {
     inset: auto auto 16% -30%;
     height: 140%;
     width: 26%;
-    background: linear-gradient(180deg, rgba(93, 255, 188, 0) 0%, rgba(93, 255, 188, 0.3) 40%, rgba(93, 255, 188, 0) 100%);
+  background: linear-gradient(180deg, rgba(94, 181, 255, 0) 0%, rgba(94, 181, 255, 0.3) 40%, rgba(94, 181, 255, 0) 100%);
     filter: blur(12px);
     animation: beamPan 8.4s ease-in-out infinite;
   }

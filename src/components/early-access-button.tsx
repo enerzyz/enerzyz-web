@@ -48,7 +48,7 @@ export function EarlyAccessButton({
       <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
         <div className="beam-line" />
       </div>
-      <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-r from-emerald-400/30 via-sky-500/20 to-purple-500/30 blur-2xl opacity-70 transition duration-500 group-hover:opacity-95" />
+  <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-r from-sky-400/30 via-blue-500/20 to-indigo-500/30 blur-2xl opacity-70 transition duration-500 group-hover:opacity-95" />
       <motion.span
         className="pointer-events-none absolute inset-[1px] rounded-full border border-white/15 bg-white/5 backdrop-blur-xl"
         variants={{

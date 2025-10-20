@@ -6,9 +6,9 @@ export function CTASection() {
       id="contact"
   className="relative mx-auto mt-32 max-w-5xl overflow-hidden rounded-[48px] border border-white/10 bg-white/[0.05] px-6 py-16 text-center shadow-[0_40px_120px_rgba(3,8,20,0.55)] sm:px-12"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/20 via-sky-500/10 to-purple-500/20 opacity-70" />
+  <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 via-blue-500/12 to-indigo-500/20 opacity-70" />
       <div className="relative space-y-6">
-        <span className="text-xs uppercase tracking-[0.3em] text-emerald-200/80">
+  <span className="text-xs uppercase tracking-[0.3em] text-sky-200/80">
           launch with enerzyz
         </span>
         <h2 className="text-4xl font-semibold text-white md:text-5xl">

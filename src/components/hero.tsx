@@ -24,8 +24,8 @@ export function Hero() {
           >
             Enerzyz Platform
             <span className="relative flex h-2 w-2">
-              <span className="absolute inset-0 animate-ping rounded-full bg-emerald-300/80" />
-              <span className="relative h-2 w-2 rounded-full bg-emerald-400" />
+              <span className="absolute inset-0 animate-ping rounded-full bg-sky-300/80" />
+              <span className="relative h-2 w-2 rounded-full bg-sky-400" />
             </span>
           </motion.span>
 
@@ -38,7 +38,7 @@ export function Hero() {
             {headlineSegments.map((segment) => (
               <span
                 key={segment.text}
-                className={segment.glow ? "animate-text-glow bg-gradient-to-r from-emerald-300 via-sky-400 to-purple-400 bg-clip-text text-transparent" : undefined}
+                className={segment.glow ? "animate-text-glow bg-gradient-to-r from-sky-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent" : undefined}
               >
                 {segment.text}
               </span>
@@ -152,7 +152,7 @@ function BackgroundVideo() {
           type="video/mp4"
         />
       </video>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(93,255,188,0.22),transparent_55%)]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(94,181,255,0.24),transparent_55%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,5,19,0.66)_0%,rgba(4,5,19,0.88)_60%,#040513_100%)]" />
     </div>
   );
