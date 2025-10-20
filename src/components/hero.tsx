@@ -1,0 +1,159 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { EarlyAccessButton } from "./early-access-button";
+import { CircularOrbit } from "./circular-orbit";
+
+const headlineSegments = [
+  { text: "Orchestrate", glow: false },
+  { text: " clean energy", glow: true },
+  { text: " with predictive precision", glow: false },
+];
+
+export function Hero() {
+  return (
+    <section className="relative isolate overflow-hidden">
+      <BackgroundVideo />
+      <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center gap-16 px-6 pb-24 pt-32 lg:flex-row lg:items-center lg:px-12">
+        <div className="w-full lg:max-w-3xl">
+          <motion.span
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+          >
+            Enerzyz Platform
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inset-0 animate-ping rounded-full bg-emerald-300/80" />
+              <span className="relative h-2 w-2 rounded-full bg-emerald-400" />
+            </span>
+          </motion.span>
+
+          <motion.h1
+            className="mt-8 text-4xl font-semibold leading-tight text-white md:text-6xl lg:text-7xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.9, ease: "easeOut" }}
+          >
+            {headlineSegments.map((segment) => (
+              <span
+                key={segment.text}
+                className={segment.glow ? "animate-text-glow bg-gradient-to-r from-emerald-300 via-sky-400 to-purple-400 bg-clip-text text-transparent" : undefined}
+              >
+                {segment.text}
+              </span>
+            ))}
+          </motion.h1>
+
+          <motion.p
+            className="mt-6 max-w-2xl text-base text-white/70 md:text-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
+          >
+            Enerzyz synchronizes distributed energy resources, market signals,
+            and critical loads into a single control pane. Deploy predictive
+            automation that keeps your grid resilient, profitable, and carbon
+            neutral by design.
+          </motion.p>
+
+          <motion.div
+            className="mt-10 flex flex-wrap items-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.9, ease: "easeOut" }}
+          >
+            <EarlyAccessButton />
+            <a
+              href="#learn-more"
+              className="inline-flex items-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:border-white/40 hover:text-white"
+            >
+              View platform
+            </a>
+          </motion.div>
+
+          <motion.div
+            className="mt-12 grid gap-6 sm:grid-cols-3"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: { staggerChildren: 0.16 },
+              },
+            }}
+          >
+            {[
+              {
+                label: "Decision latency",
+                value: "<280ms",
+                detail: "Edge-to-cloud control loop",
+              },
+              {
+                label: "Carbon intensity",
+                value: "-38%",
+                detail: "Live market arbitrage",
+              },
+              {
+                label: "Reliability",
+                value: "99.98%",
+                detail: "Autonomous fallback modes",
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.label}
+                className="glass-panel rounded-3xl px-4 py-6"
+                variants={{
+                  hidden: { opacity: 0, y: 18 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <div className="text-sm uppercase tracking-[0.24em] text-white/60">
+                  {item.label}
+                </div>
+                <div className="mt-3 text-3xl font-semibold text-white">
+                  {item.value}
+                </div>
+                <div className="mt-1 text-sm text-white/60">{item.detail}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="relative flex w-full justify-center lg:justify-end"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.75, duration: 1.1, ease: "easeOut" }}
+        >
+          <CircularOrbit />
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function BackgroundVideo() {
+  return (
+    <div className="pointer-events-none absolute inset-0">
+      <video
+        className="h-full w-full object-cover opacity-80"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/video/hero-fallback.svg"
+      >
+        <source src="/video/hero-loop.mp4" type="video/mp4" />
+        <source
+          src="https://cdn.coverr.co/videos/coverr-silicon-valley-technology-5692/1080p.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(93,255,188,0.22),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,5,19,0.66)_0%,rgba(4,5,19,0.88)_60%,#040513_100%)]" />
+    </div>
+  );
+}

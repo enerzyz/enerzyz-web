@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#040513"/>
+  <g filter="url(#a)">
+    <ellipse cx="470" cy="230" rx="390" ry="320" fill="#58B3FF" fill-opacity="0.32"/>
+  </g>
+  <g filter="url(#b)">
+    <ellipse cx="1290" cy="640" rx="420" ry="360" fill="#5DFFBC" fill-opacity="0.28"/>
+  </g>
+  <g filter="url(#c)">
+    <ellipse cx="710" cy="630" rx="320" ry="280" fill="#C38BFF" fill-opacity="0.18"/>
+  </g>
+  <defs>
+    <filter id="a" x="-100" y="-220" width="1140" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="120" result="blur"/>
+    </filter>
+    <filter id="b" x="690" y="80" width="1200" height="1120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="140" result="blur"/>
+    </filter>
+    <filter id="c" x="210" y="150" width="1000" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="130" result="blur"/>
+    </filter>
+  </defs>
+</svg>

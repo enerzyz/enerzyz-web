@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #040513;
+  --background-alt: #05091f;
+  --foreground: #f4f8ff;
+  --accent-primary: #5dffbc;
+  --accent-secondary: #58b3ff;
+  --accent-tertiary: #c38bff;
+  --surface: rgba(9, 14, 31, 0.9);
+  --glow: rgba(88, 179, 255, 0.35);
+  --shadow-card: 0 20px 70px rgba(9, 18, 46, 0.28);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(120% 120% at 90% 10%, rgba(88, 179, 255, 0.18), transparent 50%),
+    radial-gradient(100% 100% at 5% 80%, rgba(93, 255, 188, 0.24), transparent 55%),
+    linear-gradient(160deg, var(--background) 0%, #02030a 45%, var(--background-alt) 100%);
+  color: var(--foreground);
+  font-family: var(--font-space-grotesk), system-ui, -apple-system, "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(93, 255, 188, 0.35);
+  color: #020511;
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(0.96);
+  }
+  45% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    color: rgba(244, 248, 255, 0.58);
+    text-shadow: 0 0 12px rgba(88, 179, 255, 0);
+  }
+  50% {
+    color: rgba(244, 248, 255, 0.98);
+    text-shadow: 0 0 30px rgba(93, 255, 188, 0.55);
+  }
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes beamPan {
+  0% {
+    transform: translateX(-120%);
+  }
+  60% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes buttonSweep {
+  0% {
+    transform: translateX(-130%) skewX(-12deg);
+  }
+  45% {
+    transform: translateX(130%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(130%) skewX(-12deg);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: var(--surface);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: var(--shadow-card);
+  }
+
+  .animate-glow-soft {
+    animation: glowPulse 12s ease-in-out infinite;
+  }
+
+  .animate-text-glow {
+    animation: textGlow 6s ease-in-out infinite;
+  }
+
+  .animate-orbit {
+    animation: orbitSpin 24s linear infinite;
+  }
+
+  .animate-button-sweep::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.45) 55%, rgba(255, 255, 255, 0) 100%);
+    transform-origin: left;
+    animation: buttonSweep 3.2s ease-in-out infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .animate-button-sweep:hover::after {
+    opacity: 1;
+  }
+
+  .mask-gradient {
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), transparent 72%);
+  }
+
+  .beam-line {
+    position: absolute;
+    inset: auto auto 16% -30%;
+    height: 140%;
+    width: 26%;
+    background: linear-gradient(180deg, rgba(93, 255, 188, 0) 0%, rgba(93, 255, 188, 0.3) 40%, rgba(93, 255, 188, 0) 100%);
+    filter: blur(12px);
+    animation: beamPan 8.4s ease-in-out infinite;
+  }
+
+  .grid-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+}
