@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { SocialDock } from "@/components/social-dock";
 import "./globals.css";
 
 const primarySans = Space_Grotesk({
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${primarySans.variable} ${codeMono.variable} antialiased`}>
         {children}
+        <SocialDock />
       </body>
     </html>
   );
