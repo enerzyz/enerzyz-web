@@ -8,7 +8,7 @@ test.describe("Enerzyz marketing site", () => {
 
     await expect(page.getByRole("heading", { name: heroHeadline })).toBeVisible();
     await expect(
-      page.getByRole("link", { name: /experience it/i }).first(),
+      page.getByRole("button", { name: /experience it/i }).first(),
     ).toBeVisible();
 
     const backgroundVideo = page.locator("video");
@@ -18,8 +18,8 @@ test.describe("Enerzyz marketing site", () => {
 
   test("shows feature metrics", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByText("Decision latency").first()).toBeVisible();
-    await expect(page.getByText("Carbon intensity").first()).toBeVisible();
-    await expect(page.getByText("Reliability").first()).toBeVisible();
+    await expect(page.getByText(/model accuracy/i).first()).toBeVisible();
+    await expect(page.getByText(/increase efficiency/i).first()).toBeVisible();
+    await expect(page.getByText(/unplanned outage/i).first()).toBeVisible();
   });
 });

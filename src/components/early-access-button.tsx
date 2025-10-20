@@ -47,9 +47,10 @@ export function EarlyAccessButton({
 		phone: "",
 	});
 	const [errors, setErrors] = useState<Partial<Record<FieldKey, string>>>({});
-	const [submissionState, setSubmissionState] = useState<"idle" | "success">(
-		"idle",
-	);
+	const [submissionState, setSubmissionState] = useState<
+		"idle" | "loading" | "success" | "error"
+	>("idle");
+	const [serverError, setServerError] = useState<string | null>(null);
 
 	useEffect(() => {
 		if (isOpen) {
@@ -66,6 +67,7 @@ export function EarlyAccessButton({
 	const resetForm = useCallback(() => {
 		setFormState({ name: "", email: "", phone: "" });
 		setErrors({});
+		setServerError(null);
 		setSubmissionState("idle");
 	}, []);
 
@@ -77,6 +79,7 @@ export function EarlyAccessButton({
 	const handleChange = useCallback((key: FieldKey, value: string) => {
 		setFormState((prev) => ({ ...prev, [key]: value }));
 		setErrors((prev) => ({ ...prev, [key]: undefined }));
+		setServerError(null);
 	}, []);
 
 	const validate = useCallback(() => {
@@ -97,15 +100,45 @@ export function EarlyAccessButton({
 	}, [formState.email, formState.name]);
 
 	const handleSubmit = useCallback(
-		(event: FormEvent<HTMLFormElement>) => {
+		async (event: FormEvent<HTMLFormElement>) => {
 			event.preventDefault();
 			if (!validate()) {
 				return;
 			}
 
-			setSubmissionState("success");
+			setSubmissionState("loading");
+			setServerError(null);
+
+			try {
+				const response = await fetch("/api/demo-request", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						name: formState.name,
+						businessEmail: formState.email,
+						contactNumber: formState.phone,
+					}),
+				});
+
+				if (!response.ok) {
+					const data = await response.json().catch(() => null);
+					setServerError(
+						data?.error ?? "Could not submit your details. Please try again.",
+					);
+					setSubmissionState("error");
+					return;
+				}
+
+				setSubmissionState("success");
+			} catch (error) {
+				console.error("Submission failed", error);
+				setServerError("Network error. Please try again shortly.");
+				setSubmissionState("error");
+			}
 		},
-		[validate],
+		[formState.email, formState.name, formState.phone, validate],
 	);
 
 	useEffect(() => {
@@ -146,6 +179,8 @@ export function EarlyAccessButton({
 					placeholder: "+1 222 555 0199",
 				},
 			];
+
+			const isLoading = submissionState === "loading";
 
 	return (
 		<>
@@ -265,21 +300,33 @@ export function EarlyAccessButton({
 
 							<motion.button
 								whileTap={{ scale: 0.98 }}
-								className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-sky-500/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white transition hover:border-white/40 hover:bg-sky-500/30"
+								className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-sky-500/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white transition hover:border-white/40 hover:bg-sky-500/30 disabled:cursor-not-allowed disabled:opacity-60"
 								type="submit"
+								disabled={isLoading}
+								aria-busy={isLoading}
 							>
 								Summon
 							</motion.button>
 
-							{submissionState === "success" ? (
-								<motion.p
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									className="text-center text-sm font-medium text-sky-200"
-								>
-									Thank you! Our team will reach out shortly.
-								</motion.p>
-							) : null}
+							<div className="min-h-[1.5rem] text-center text-sm" aria-live="polite">
+								{submissionState === "loading" ? (
+									<p className="font-medium text-white/80">Sending your request...</p>
+								) : null}
+								{submissionState === "error" ? (
+									<p className="font-medium text-rose-300">
+										{serverError ?? "We couldn't submit your request. Please try again."}
+									</p>
+								) : null}
+								{submissionState === "success" ? (
+									<motion.p
+										initial={{ opacity: 0 }}
+										animate={{ opacity: 1 }}
+										className="font-medium text-sky-200"
+									>
+										Thank you! Our team will reach out shortly.
+									</motion.p>
+								) : null}
+							</div>
 						</form>
 					</motion.div>
 				</div>

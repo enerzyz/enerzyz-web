@@ -75,7 +75,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
           >
-            Enerzyz synchronizes fragmented energy assets towards a single source of truth.
             Automate all your energy asset management through Enerzyz Vertical AI Agent to ensure optimization at every second!
           </motion.p>
 
