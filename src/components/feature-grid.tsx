@@ -10,15 +10,15 @@ const features: Feature[] = [
     eyebrow: "Autonomous orchestration",
     title: "Predictive control across every asset",
     description:
-      "Blend markets, weather, and grid signals to orchestrate storage, solar, and flexible load from a single command surface.",
+      "Blend asset health parameters, external parameters, and historical patterns to orchestrate powered assets realtime",
     metric: "52% fewer manual overrides",
   },
   {
     eyebrow: "Critical visibility",
-    title: "Digital twin for the modern energy stack",
+    title: "Digital twin for the facility's assets",
     description:
       "Stream real-time telemetry into adaptable twins that simulate impact before commands ship downstream.",
-    metric: "45s scenario simulations",
+    metric: "1h horizon simulations",
   },
   {
     eyebrow: "Compliance-by-design",

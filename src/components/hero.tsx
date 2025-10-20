@@ -93,19 +93,19 @@ export function Hero() {
           >
             {[
               {
-                label: "Decision latency",
-                value: "<280ms",
-                detail: "Edge-to-cloud control loop",
+                label: "model accuracy",
+                value: "95%+",
+                detail: "in asset health indexing",
               },
               {
-                label: "Carbon intensity",
-                value: "-38%",
-                detail: "Live market arbitrage",
+                label: "increase efficiency",
+                value: "30%+",
+                detail: "by O&M cost reduction",
               },
               {
-                label: "Reliability",
-                value: "99.98%",
-                detail: "Autonomous fallback modes",
+                label: "unplanned outage",
+                value: "0s",
+                detail: "by knowing beforehand",
               },
             ].map((item) => (
               <motion.div

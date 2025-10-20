@@ -27,26 +27,25 @@ export function CodeShowcase() {
       <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6">
           <span className="text-xs uppercase tracking-[0.3em] text-sky-200/80">
-            explainable automation
+            seamless integration
           </span>
           <h2 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
-            <span className="animate-text-glow">Readable actions</span> for humans,
-            unstoppable for the grid.
+            <span className="animate-text-glow">Readable API</span>  to connect any
+             assets lightning fast.
           </h2>
           <p className="text-lg text-white/70">
-            Every Enerzyz decision ships with the evidence you need. Inspect
-            causal graphs, preview counterfactuals, and sign off with total
-            clarity before anything executes.
+            Connect Asset to the bus and start working with the asset data.
+            Inspect causal graphs, observe asset status updates, and talk to your assets.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-white/60">
             <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
+              Universal API
+            </span>
+            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
+              Asset Status Updates  
+            </span>
+            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
               Forecast intelligence
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
-              Automated dispatch
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
-              Audit trail
             </span>
           </div>
         </div>
