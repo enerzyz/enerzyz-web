@@ -15,14 +15,13 @@ export function CTASection() {
           Integrate us into your microgrid within weeks, not quarters.
         </h2>
         <p className="mx-auto max-w-2xl text-lg text-white/70">
-          Deploy Enerzyz alongside your existing BMS,
-          SCADA, PLC or EMS stack as the brain layer, stacking quick wins while the OS learns your
+          Deploy Enerzyz as the brain layer for your existing control stack, save from day one while the OS learns your
           operations.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <EarlyAccessButton className="px-0" />
           <a
-            href="mailto:hello@enerzyz.com"
+            href="mailto:team@enerzyz.com"
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/80 transition hover:border-white/40 hover:text-white"
           >
             Talk to an engineer

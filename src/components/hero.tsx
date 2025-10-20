@@ -11,6 +11,21 @@ const headlineSegments = [
   { text: " with prophetic precision", glow: false },
 ];
 
+const partnershipEmailBody = `Hello Enerzyz Leadership Team,
+
+My name is [Your Name] from [Your Organization]. We believe a collaboration with Enerzyz OS could help us orchestrate our distributed energy assets with greater intelligence.
+
+We would love to schedule a call to explore how our capabilities can align with Enerzyz to deliver resilient, automated energy asset operations and new value for our customers.
+
+Looking forward to discussing next steps together.
+
+Best regards,
+[Your Name]
+[Title], [Your Organization]
+[Contact Number]`;
+
+const partnershipMailto = `mailto:ai@enerzyz.com?subject=${encodeURIComponent("Partnership Proposal")}&body=${encodeURIComponent(partnershipEmailBody)}`;
+
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
@@ -60,7 +75,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
           >
-            Enerzyz synchronizes fragmented energy assets to a single source of truth.
+            Enerzyz synchronizes fragmented energy assets towards a single source of truth.
             Automate all your energy asset management through Enerzyz Vertical AI Agent to ensure optimization at every second!
           </motion.p>
 
@@ -72,7 +87,9 @@ export function Hero() {
           >
             <EarlyAccessButton />
             <a
-              href="#learn-more"
+              href={partnershipMailto}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:border-white/40 hover:text-white"
             >
               Partner Up
@@ -105,7 +122,7 @@ export function Hero() {
               {
                 label: "unplanned outage",
                 value: "0s",
-                detail: "by knowing beforehand",
+                detail: "always know beforehand",
               },
             ].map((item) => (
               <motion.div
