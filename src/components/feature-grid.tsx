@@ -24,8 +24,8 @@ const features: Feature[] = [
     eyebrow: "Compliance-by-design",
     title: "Explainable, auditable automations",
     description:
-      "Every action carries its justification trail. Exportable reports keep regulators and auditors aligned without the scramble.",
-    metric: "Instant compliance packets",
+      "Every agentic action carries its justification trail. Exportable reports keep managers and auditors aligned.",
+    metric: "Transparent decision logs",
   },
 ];
 

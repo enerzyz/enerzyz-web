@@ -30,12 +30,12 @@ export function CodeShowcase() {
             seamless integration
           </span>
           <h2 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
-            <span className="animate-text-glow">Readable API</span>  to connect any
+            <span className="animate-text-glow">Super Readable API</span>  to connect any
              assets lightning fast.
           </h2>
           <p className="text-lg text-white/70">
-            Connect Asset to the bus and start working with the asset data.
-            Inspect causal graphs, observe asset status updates, and talk to your assets.
+            Connect assets to the bus and start working with the assets data.
+            Inspect causal graphs, observe asset status updates, and trace generation and consumption flow.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-white/60">
             <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
