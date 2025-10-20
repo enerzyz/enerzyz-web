@@ -4,12 +4,15 @@ import { FeatureGrid } from "@/components/feature-grid";
 import { Hero } from "@/components/hero";
 
 function PartnerStrip() {
-  const partners = ["gridforge", "lumio", "corewind", "synapse ai", "northvolt"];
+  const partners = ["BMS", "SCADA", "PLC", "IoT", "EMS"];
   return (
     <section
       id="learn-more"
       className="mx-auto mt-24 max-w-6xl px-6 text-white/40 lg:px-8"
     >
+      <div className="mb-4 text-center text-xs uppercase tracking-[0.28em] text-white/60 sm:text-sm">
+        Working as the brain layer for them all
+      </div>
       <div className="flex items-center justify-between gap-4 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-4 text-xs uppercase tracking-[0.3em] sm:text-sm">
         {partners.map((partner) => (
           <span key={partner} className="whitespace-nowrap">
@@ -31,7 +34,7 @@ export default function Home() {
       <CTASection />
       <footer className="mx-auto mt-28 w-full max-w-6xl px-6 text-white/50 lg:px-8">
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 text-sm text-center uppercase tracking-[0.28em]">
-          Enerzyz © {new Date().getFullYear()} · Built for the zero-carbon grid
+          Enerzyz © {new Date().getFullYear()} · On the pursuit to become a Kardashev Type 1 Civilization
         </div>
       </footer>
     </main>

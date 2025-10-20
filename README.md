@@ -31,6 +31,18 @@ npm run dev
 
 Visit [http://localhost:3000](http://localhost:3000) to explore the landing page.
 
+### 🔗 Lead capture via Airtable
+
+The "Experience It" modal posts submissions directly into Airtable. Provide the required credentials in a local environment file (a sample `.env.local` is already ignored by git):
+
+```
+AIRTABLE_TOKEN=pat...        # Airtable personal access token
+AIRTABLE_BASE_ID=app...
+AIRTABLE_TABLE_ID=tbl...
+```
+
+Restart the development server after updating environment variables so the API route can pick them up.
+
 ## Tests
 
 Playwright validates that the hero renders, CTAs are visible, and feature metrics ship correctly:

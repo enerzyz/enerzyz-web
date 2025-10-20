@@ -10,22 +10,22 @@ const features: Feature[] = [
     eyebrow: "Autonomous orchestration",
     title: "Predictive control across every asset",
     description:
-      "Blend markets, weather, and grid signals to orchestrate storage, solar, and flexible load from a single command surface.",
-    metric: "52% fewer manual overrides",
+      "Blend asset health parameters, external parameters, and historical patterns to orchestrate powered assets realtime.",
+    metric: "Always human in the loop",
   },
   {
     eyebrow: "Critical visibility",
-    title: "Digital twin for the modern energy stack",
+    title: "Digital twin for the facility's assets",
     description:
       "Stream real-time telemetry into adaptable twins that simulate impact before commands ship downstream.",
-    metric: "45s scenario simulations",
+    metric: "1h horizon simulations",
   },
   {
     eyebrow: "Compliance-by-design",
     title: "Explainable, auditable automations",
     description:
-      "Every action carries its justification trail. Exportable reports keep regulators and auditors aligned without the scramble.",
-    metric: "Instant compliance packets",
+      "Every agentic action carries its justification trail. Exportable reports keep managers and auditors aligned.",
+    metric: "Transparent decision logs",
   },
 ];
 
@@ -38,7 +38,7 @@ export function FeatureGrid() {
             key={feature.title}
             className="group relative flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/[0.03] p-8 text-left transition duration-500 ease-out hover:-translate-y-2 hover:border-white/30 hover:bg-white/[0.06]"
           >
-            <div className="text-xs uppercase tracking-[0.3em] text-emerald-200/90">
+            <div className="text-xs uppercase tracking-[0.3em] text-sky-200/90">
               {feature.eyebrow}
             </div>
             <h3 className="text-2xl font-semibold leading-tight text-white">
