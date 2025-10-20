@@ -5,19 +5,23 @@ import { motion } from "framer-motion";
 const codeLines = [
   {
     prefix: "const",
-    snippet: "forecast = await enerzyz.intelligence.predict({ horizon: '15m' });",
+    snippet: "client = EnerzyzClient(api_key=\"YOUR_API_KEY\");",
   },
   {
-    prefix: "if",
-    snippet: "(forecast.load.spikes) controlGrid.defer('non-critical');",
+    prefix: "const",
+    snippet: "facility = client.facilities.connect(\"NY_Office\");",
+  },
+  {
+    prefix: "const",
+    snippet: "telemetry = facility.get_live_metrics();",
+  },
+  {
+    prefix: "const",
+    snippet: "insight = Optimizer({ objectives: ['efficiency'] }).run(telemetry);",
   },
   {
     prefix: "await",
-    snippet: "enerzyz.dispatch.storage({ site: 'west-battery', power: '+3.2MW' });",
-  },
-  {
-    prefix: "log",
-    snippet: "compliance.record({ outcome: 'market-bid', delta: '-12tCO₂' });",
+    snippet: "facility.apply_optimization(insight);",
   },
 ];
 
