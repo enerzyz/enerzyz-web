@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const heroHeadline = /Orchestrate\s+clean energy\s+with predictive precision/i;
+const heroHeadline = /Orchestrate\s+energy assets\s+with prophetic precision/i;
 
 test.describe("Enerzyz marketing site", () => {
   test("renders hero headline, video, and CTA", async ({ page }) => {
@@ -8,7 +8,7 @@ test.describe("Enerzyz marketing site", () => {
 
     await expect(page.getByRole("heading", { name: heroHeadline })).toBeVisible();
     await expect(
-      page.getByRole("link", { name: /request early access/i }).first(),
+      page.getByRole("link", { name: /experience it/i }).first(),
     ).toBeVisible();
 
     const backgroundVideo = page.locator("video");

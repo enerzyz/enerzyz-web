@@ -1,33 +1,42 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { EarlyAccessButton } from "./early-access-button";
-import { CircularOrbit } from "./circular-orbit";
+// import { CircularOrbit } from "./circular-orbit";
 
 const headlineSegments = [
   { text: "Orchestrate", glow: false },
-  { text: " clean energy", glow: true },
-  { text: " with predictive precision", glow: false },
+  { text: " energy assets", glow: true },
+  { text: " with prophetic precision", glow: false },
 ];
 
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
       <BackgroundVideo />
-      <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center gap-16 px-6 pb-24 pt-32 lg:flex-row lg:items-center lg:px-12">
-        <div className="w-full lg:max-w-3xl">
-          <motion.span
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+      <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-center gap-16 px-6 pb-24 pt-32 text-center lg:px-12">
+        <div className="flex w-full max-w-3xl flex-col items-center">
+          <Link
+            href="https://os.enerzyz.com"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Explore Enerzyz OS"
+            className="inline-flex"
           >
-            Enerzyz Platform
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inset-0 animate-ping rounded-full bg-sky-300/80" />
-              <span className="relative h-2 w-2 rounded-full bg-sky-400" />
-            </span>
-          </motion.span>
+            <motion.span
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70 transition hover:border-white/30 hover:text-white"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+            >
+              Enerzyz OS
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inset-0 animate-ping rounded-full bg-sky-300/80" />
+                <span className="relative h-2 w-2 rounded-full bg-sky-400" />
+              </span>
+            </motion.span>
+          </Link>
 
           <motion.h1
             className="mt-8 text-4xl font-semibold leading-tight text-white md:text-6xl lg:text-7xl"
@@ -46,19 +55,17 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="mt-6 max-w-2xl text-base text-white/70 md:text-lg"
+            className="mt-6 max-w-2xl text-center text-base text-white/70 md:text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
           >
-            Enerzyz synchronizes distributed energy resources, market signals,
-            and critical loads into a single control pane. Deploy predictive
-            automation that keeps your grid resilient, profitable, and carbon
-            neutral by design.
+            Enerzyz synchronizes fragmented energy assets to a single source of truth.
+            Automate all your energy asset management through Enerzyz Vertical AI Agent to ensure optimization at every second!
           </motion.p>
 
           <motion.div
-            className="mt-10 flex flex-wrap items-center gap-4"
+            className="mt-10 flex flex-wrap items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.9, ease: "easeOut" }}
@@ -68,12 +75,12 @@ export function Hero() {
               href="#learn-more"
               className="inline-flex items-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:border-white/40 hover:text-white"
             >
-              View platform
+              Partner Up
             </a>
           </motion.div>
 
           <motion.div
-            className="mt-12 grid gap-6 sm:grid-cols-3"
+            className="mt-12 grid gap-6 text-center sm:grid-cols-3"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -103,7 +110,7 @@ export function Hero() {
             ].map((item) => (
               <motion.div
                 key={item.label}
-                className="glass-panel rounded-3xl px-4 py-6"
+                className="glass-panel rounded-3xl px-4 py-6 text-center"
                 variants={{
                   hidden: { opacity: 0, y: 18 },
                   visible: { opacity: 1, y: 0 },
@@ -122,14 +129,17 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div
-          className="relative flex w-full justify-center lg:justify-end"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.75, duration: 1.1, ease: "easeOut" }}
-        >
-          <CircularOrbit />
-        </motion.div>
+        {/**
+         * Enerzyz control core animation hidden per request
+         * <motion.div
+         *   className="relative flex w-full justify-center lg:justify-end"
+         *   initial={{ opacity: 0, x: 40 }}
+         *   animate={{ opacity: 1, x: 0 }}
+         *   transition={{ delay: 0.75, duration: 1.1, ease: "easeOut" }}
+         * >
+         *   <CircularOrbit />
+         * </motion.div>
+         */}
       </div>
     </section>
   );
