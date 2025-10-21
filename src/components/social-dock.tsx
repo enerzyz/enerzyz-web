@@ -42,11 +42,11 @@ const socials: Social[] = [
 
 export function SocialDock() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3 text-white">
-      <span className="rounded-full bg-white/8 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-white/60 backdrop-blur">
+    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center gap-2.5 text-white">
+      <span className="rounded-full bg-white/8 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-[0.3em] text-white/60 backdrop-blur">
         Connect
       </span>
-      <div className="flex flex-col gap-2 rounded-full border border-white/15 bg-white/5 p-3 backdrop-blur-xl shadow-[0_20px_50px_rgba(2,6,23,0.45)]">
+      <div className="flex flex-col gap-1.5 rounded-full border border-white/15 bg-white/5 p-2.5 backdrop-blur-xl shadow-[0_16px_40px_rgba(2,6,23,0.4)]">
         {socials.map((social) => (
           <Link
             key={social.name}
@@ -54,10 +54,10 @@ export function SocialDock() {
             target="_blank"
             rel="noreferrer"
             aria-label={social.name}
-            className="group relative grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-slate-950/40 text-white/70 transition hover:border-sky-400/60 hover:text-white"
+            className="group relative grid h-9 w-9 place-items-center rounded-full border border-white/15 bg-slate-950/40 text-white/70 transition hover:border-sky-400/60 hover:text-white"
           >
             <span className="pointer-events-none absolute inset-0 rounded-full bg-sky-400/10 opacity-0 transition group-hover:opacity-100" />
-            {social.icon({ className: "h-4 w-4" })}
+            {social.icon({ className: "h-3.5 w-3.5" })}
           </Link>
         ))}
       </div>

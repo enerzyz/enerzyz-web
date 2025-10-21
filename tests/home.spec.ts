@@ -22,4 +22,15 @@ test.describe("Enerzyz marketing site", () => {
     await expect(page.getByText(/increase efficiency/i).first()).toBeVisible();
     await expect(page.getByText(/unplanned outage/i).first()).toBeVisible();
   });
+
+  test("direct book-a-demo link loads booking form", async ({ page }) => {
+    await page.goto("/book-a-demo");
+
+    await expect(
+      page.getByRole("heading", { name: /let our engineers chart the path/i }),
+    ).toBeVisible();
+
+    await expect(page.getByLabel(/name/i)).toBeVisible();
+    await expect(page.getByRole("button", { name: /submit/i })).toBeVisible();
+  });
 });
