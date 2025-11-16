@@ -24,16 +24,19 @@ export function SiteHeader() {
       }`}
       aria-hidden={isHidden}
     >
-      <Link href="/" className="inline-flex items-center" aria-label="Enerzyz home">
-        <Image
-          src="/enerzyz-logo-long.png"
-          alt="Enerzyz"
-          width={220}
-          height={48}
-          className="h-10 w-auto"
-          priority
-        />
-      </Link>
+      <div className="flex items-center gap-6">
+        <Link href="/" className="inline-flex items-center" aria-label="Enerzyz home">
+          <Image
+            src="/enerzyz-logo-long.png"
+            alt="Enerzyz"
+            width={220}
+            height={48}
+            className="h-10 w-auto"
+            priority
+          />
+        </Link>
+      </div>
+
       <span className="text-[7px] font-semibold uppercase tracking-[0.4em] text-white/60">
         Autopilot for energy assets
       </span>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { SocialDock } from "@/components/social-dock";
 import { SiteHeader } from "@/components/site-header";
+import CookieBanner from "@/components/cookie-banner";
 import "./globals.css";
 
 const primarySans = Space_Grotesk({
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={`${primarySans.variable} ${codeMono.variable} antialiased`}>
         <SiteHeader />
         {children}
+        <CookieBanner />
         <SocialDock />
       </body>
     </html>
