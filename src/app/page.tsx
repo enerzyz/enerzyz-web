@@ -2,6 +2,7 @@ import { CTASection } from "@/components/cta-section";
 import { CodeShowcase } from "@/components/code-showcase";
 import { FeatureGrid } from "@/components/feature-grid";
 import { Hero } from "@/components/hero";
+import Affiliations from "@/components/affiliations";
 
 function PartnerStrip() {
   const partners = ["BMS", "SCADA", "PLC", "IoT", "EMS"];
@@ -28,15 +29,29 @@ export default function Home() {
   return (
     <main className="relative flex flex-col pb-32">
       <Hero />
+      <Affiliations />
       <PartnerStrip />
       <FeatureGrid />
       <CodeShowcase />
       <CTASection />
       <footer className="mx-auto mt-28 w-full max-w-6xl px-6 text-white/50 lg:px-8">
-        <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 text-sm text-center uppercase tracking-[0.28em]">
-          Enerzyz © {new Date().getFullYear()} · On the pursuit to become a Kardashev Type 1 Civilization
+        <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 text-sm text-center">
+          <div className="mb-3 uppercase tracking-[0.28em] text-white/60">Enerzyz © {new Date().getFullYear()}</div>
+          <div className="mt-2 uppercase tracking-[0.28em] text-white/50">On the pursuit to become a Kardashev Type 1 Civilization</div>
         </div>
       </footer>
+
+      {/* Legal links placed below the footer bar (not inside the footer card) */}
+      <div className="mx-auto mt-6 w-full max-w-6xl px-6 text-white/60 lg:px-8">
+        <nav aria-label="Legal" className="flex flex-col items-center gap-2 text-xs md:flex-row md:justify-center md:gap-6">
+          <a href="/privacy-policy" className="hover:text-white">Privacy Policy</a>
+          <a href="/terms-of-service" className="hover:text-white">Terms of Service</a>
+          <a href="/acceptable-use-policy" className="hover:text-white">Acceptable Use</a>
+          <a href="/data-processing-addendum" className="hover:text-white">Data Processing Addendum</a>
+          <a href="/sla-support" className="hover:text-white">SLA &amp; Support</a>
+          <a href="/cookie-policy" className="hover:text-white">Cookie Policy</a>
+        </nav>
+      </div>
     </main>
   );
 }
