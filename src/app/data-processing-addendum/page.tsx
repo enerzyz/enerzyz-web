@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function DataProcessingAddendum() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-20 text-slate-100">
+  <main className="mx-auto max-w-5xl px-6 pt-28 pb-20 text-slate-100">
       <h1 className="mb-6 text-3xl font-semibold text-white">Data Processing Addendum (DPA)</h1>
       <p className="mb-6 text-lg text-white/80">
         This Data Processing Addendum (&quot;DPA&quot;) sets out the terms under which Enerzyz will process Personal Data

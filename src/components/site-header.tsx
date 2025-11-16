@@ -38,7 +38,7 @@ export function SiteHeader() {
       </div>
 
       <span className="text-[7px] font-semibold uppercase tracking-[0.4em] text-white/60">
-        Autopilot for energy assets
+        AutoPilot for Energy Assets
       </span>
     </header>
   );
