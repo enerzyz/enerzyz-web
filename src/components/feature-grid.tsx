@@ -10,7 +10,7 @@ const features: Feature[] = [
     eyebrow: "Autonomous orchestration",
     title: "Predictive control across every asset",
     description:
-      "Blend asset health parameters, external parameters, and historical patterns to orchestrate powered assets realtime.",
+      "Blend asset health parameters, external parameters, and historical patterns to orchestrate powered assets realtime with human in the loop by default.",
     metric: "Always human in the loop",
   },
   {
