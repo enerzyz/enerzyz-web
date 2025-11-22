@@ -11,7 +11,7 @@ export function Affiliations() {
 
   return (
     <section className="mx-auto mt-16 max-w-6xl px-6 text-white/90 lg:px-8">
-      <h2 className="mb-4 text-center text-xl sm:text-2xl md:text-3xl font-semibold text-white">Collaborating with</h2>
+      <h2 className="mb-4 text-center text-xl sm:text-2xl md:text-3xl font-semibold text-white">Our Affiliations</h2>
       <p className="hidden sm:block mx-auto mb-6 max-w-2xl text-center text-xs sm:text-sm md:text-base lg:text-lg text-white/60">
         We are collaborating with leading academic institutions, AI technology leaders, sustainability enablers, industry associations and most importantly energy asset manufacturers to accelerate
         secure, trustworthy energy asset lifecycle innovation.

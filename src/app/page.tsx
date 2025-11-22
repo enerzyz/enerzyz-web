@@ -44,6 +44,7 @@ export default function Home() {
       {/* Legal links placed below the footer bar (not inside the footer card) */}
       <div className="mx-auto mt-6 w-full max-w-6xl px-6 text-white/60 lg:px-8">
         <nav aria-label="Legal" className="flex flex-col items-center gap-2 text-xs md:flex-row md:justify-center md:gap-6">
+          <a href="/energy-assets" className="hover:text-white">Energy Assets</a>
           <a href="/privacy-policy" className="hover:text-white">Privacy Policy</a>
           <a href="/terms-of-service" className="hover:text-white">Terms of Service</a>
           <a href="/acceptable-use-policy" className="hover:text-white">Acceptable Use</a>
