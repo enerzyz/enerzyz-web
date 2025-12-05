@@ -49,7 +49,7 @@ export default function TermsOfService() {
         <p>
           Enerzyz and its licensors retain ownership of the Service, underlying software, models, and all intellectual
           property rights. Customer retains ownership of Customer Data; Enerzyz acquires no rights in Customer Data
-          except as permitted under the DPA and to provide the Service.
+          except as permitted under the DPA and to provide the Service. Asset life expansion is based on Enerzyz case studies where asset depreciation timeline was increased by 25% due to increased visiblity and asset health tracking. This is not guaranteed and actual results may vary based on asset type, usage, and maintenance practices.   
         </p>
 
         <h2 className="text-2xl font-semibold">6. Warranties, Disclaimers &amp; Limitations</h2>

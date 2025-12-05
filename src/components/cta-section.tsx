@@ -29,9 +29,9 @@ export function CTASection() {
         </div>
         <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-3">
           {[
-            { label: "Sites orchestrated", value: "93" },
-            { label: "Equivalent savings", value: "2105MWH" },
-            { label: "CO₂ savings", value: "589.4T" },
+            { label: "Sites orchestrated", value: "120+" },
+            { label: "Equivalent savings", value: "2390MWH" },
+            { label: "Asset life expansion*", value: "25%+" },
           ].map((item) => (
             <div
               key={item.label}
