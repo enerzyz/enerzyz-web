@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { SocialDock } from "@/components/social-dock";
 import { SiteHeader } from "@/components/site-header";
@@ -36,8 +37,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${primarySans.variable} ${codeMono.variable} antialiased`}>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17791793912"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17791793912');
+          `}
+        </Script>
         <SiteHeader />
         {children}
         <CookieBanner />

@@ -31,7 +31,7 @@ export function CTASection() {
           {[
             { label: "Sites orchestrated", value: "120+" },
             { label: "Equivalent savings", value: "2390MWH" },
-            { label: "Asset life expansion*", value: "25%+" },
+            { label: "Asset life extension*", value: "25%+" },
           ].map((item) => (
             <div
               key={item.label}

@@ -75,7 +75,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
           >
-            Automate all your energy asset management through Enerzyz Vertical AI Agent to ensure optimization at every second!
+            Automate all your energy asset management through Enerzyz OS to ensure optimization at every second!
           </motion.p>
 
           <motion.div
@@ -164,21 +164,8 @@ export function Hero() {
 function BackgroundVideo() {
   return (
     <div className="pointer-events-none absolute inset-0">
-      <video
-        className="h-full w-full object-cover opacity-80"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/video/hero-fallback.svg"
-      >
-        <source src="/video/hero-loop.mp4" type="video/mp4" />
-        <source
-          src="https://cdn.coverr.co/videos/coverr-silicon-valley-technology-5692/1080p.mp4"
-          type="video/mp4"
-        />
-      </video>
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(94,181,255,0.24),transparent_55%)]" />
+      {/* Video background removed - files not present in repo */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(94,181,255,0.24),transparent_55%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,5,19,0.66)_0%,rgba(4,5,19,0.88)_60%,#040513_100%)]" />
     </div>
   );
