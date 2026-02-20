@@ -92,9 +92,9 @@ export function AssetOperatorsPage() {
         },
         {
           eyebrow: "Super-engineer dashboard",
-          title: "One screen for every site, every asset",
+          title: "Manage multiple facilities from one screen",
           description:
-            "A unified operations console aggregates asset health, alarm priority queues, energy performance, and SLA status across your entire contract portfolio. Technicians get guided troubleshooting workflows. Managers get real-time utilization and profitability metrics per site and per technician.",
+            "Enerzyz OS lets you manage multiple facilities from a single unified console — aggregating asset health, alarm priority queues, energy performance, and SLA status across your entire contract portfolio. Technicians get guided troubleshooting workflows. Managers get real-time utilization and profitability metrics per site and per technician, all without switching between tools or logins.",
           metric: "Portfolio-wide visibility",
         },
         {

@@ -16,7 +16,7 @@ export function AssetOwnersPage() {
       /* ─── Hero ─── */
       eyebrow="For Asset Owners &amp; Facility Leaders"
       headline="Turn energy assets into high-performing, appreciating investments."
-      subheadline="Commercial buildings waste 30% of the energy they consume. Enerzyz OS turns your chillers, AHUs, boilers, pumps, and electrical systems into a self-optimizing fleet — slashing opex, extending equipment life, and lifting Net Operating Income from day one."
+      subheadline="Commercial buildings waste up to 50% on their operational expenses in managing the assets. Enerzyz OS turns your chillers, AHUs, boilers, pumps, and electrical systems into a self-optimizing fleet slashing opex, extending equipment life, and lifting Net Operating Income from day one."
       heroStats={[
         { value: "30%+", label: "Energy waste eliminated" },
         { value: "25%+", label: "Asset life extended" },
@@ -92,9 +92,9 @@ export function AssetOwnersPage() {
         },
         {
           eyebrow: "Unified control plane",
-          title: "One brain for every system, every site",
+          title: "Manage multiple facilities from a single OS",
           description:
-            "Bridge legacy BACnet, Modbus, OPC-UA, MQTT, and REST APIs into a single digital twin. Manage an entire portfolio — offices in New York, data centers in Singapore, hotels in Dubai — from one pane of glass with normalized KPIs and remote command authority.",
+            "Bridge legacy BACnet, Modbus, OPC-UA, MQTT, and REST APIs into a single digital twin. Enerzyz OS lets you manage multiple facilities — offices in New York, data centers in Singapore, hotels in Dubai — from one unified dashboard with normalized KPIs, cross-site benchmarking, and remote command authority across your entire portfolio.",
           metric: "Protocol-agnostic integration",
         },
         {

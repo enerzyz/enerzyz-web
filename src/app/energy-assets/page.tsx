@@ -31,7 +31,7 @@ export default function EnergyAssets() {
       <section className="space-y-6 text-white/80">
         <h2 className="text-2xl font-semibold">What are energy assets?</h2>
         <p>
-          Energy assets are anything that transforms energy: engines, motors, pumps, batteries, solar panels, inverters, transformers, and countless others. These are the building blocks of modern civilization. Without them, we’d still be relying on manual labor and animal power. Every sector of the economy depends on these assets, yet we still struggle to operate them efficiently.
+          Energy assets are anything that transforms energy: engines, motors, HVAC systems (pumps,compressors), batteries, solar panels, inverters, generators, transformers, and countless others. These are the building blocks of modern civilization. Without them, we’d still be relying on manual labor and animal power. Every sector of the economy depends on these assets, yet we still struggle to operate them efficiently.
         </p>
 
         <p>
@@ -48,7 +48,7 @@ export default function EnergyAssets() {
 
         <h3 className="text-lg font-semibold">Our deeper mission?</h3>
         <p>
-          We’re building the foundation for seamless, integrated machine intelligence preparing the world’s physical infrastructure for the era of AGI.
+          We’re building the foundation for seamless, integrated machine intelligence preparing the world’s physical infrastructure for the era of ASI.
         </p>
       </section>
     </main>

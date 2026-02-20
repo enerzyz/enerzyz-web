@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cookie Policy — Enerzyz",
   description: "Details about cookies and tracking used on the Enerzyz website.",
+  alternates: { canonical: "https://enerzyz.com/cookie-policy" },
 };
 
 export default function CookiePolicy() {

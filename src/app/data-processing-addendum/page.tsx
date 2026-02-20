@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Data Processing Addendum — Enerzyz",
   description: "DPA describing processing, subprocessors, and safeguards.",
+  alternates: { canonical: "https://enerzyz.com/data-processing-addendum" },
 };
 
 export default function DataProcessingAddendum() {

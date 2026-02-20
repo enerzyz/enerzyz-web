@@ -127,7 +127,7 @@ export function SolutionPageLayout(props: SolutionPageProps) {
               rel="noopener noreferrer"
               className="rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:border-white/40 hover:text-white"
             >
-              Explore Platform
+              Explore Enerzyz OS
             </a>
           </motion.div>
         </motion.div>
