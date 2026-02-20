@@ -34,8 +34,8 @@ export function CodeShowcase() {
             seamless integration
           </span>
           <h2 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
-            <span className="animate-text-glow">Super Readable API</span>  to connect any
-             assets lightning fast.
+            <span className="animate-text-glow">Super Readable API</span>  to connect siloed
+              systems lightning fast.
           </h2>
           <p className="text-lg text-white/70">
             Connect assets to the bus and start working with the assets data.

@@ -1,9 +1,34 @@
+import type { Metadata } from "next";
 import { BookDemoForm } from "@/components/book-demo-form";
 
-export const metadata = {
-  title: "Book a Demo | Enerzyz",
+export const metadata: Metadata = {
+  title: "Book a Demo — See Enerzyz in Action | Enerzyz",
   description:
-    "Connect with Enerzyz engineers for a tailored walkthrough of the energy asset optimization OS.",
+    "Schedule a live demo with Enerzyz engineers. See how AI-powered predictive optimization can cut energy costs 30%+, extend asset life 25%+, and automate facility operations for your buildings, data centers, or industrial plants.",
+  keywords: [
+    "book demo energy management",
+    "smart building demo",
+    "AI facility management demo",
+    "energy optimization demo",
+    "predictive maintenance demo",
+    "building automation demo",
+    "Enerzyz demo",
+  ],
+  alternates: { canonical: "https://enerzyz.com/book-a-demo" },
+  openGraph: {
+    type: "website",
+    url: "https://enerzyz.com/book-a-demo",
+    title: "Book a Demo | Enerzyz",
+    description: "See how Enerzyz OS can cut energy costs and automate facility operations — live.",
+    siteName: "Enerzyz",
+    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Book a Demo with Enerzyz" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Demo | Enerzyz",
+    description: "Schedule a live demo — see AI-powered energy asset optimization in action.",
+    images: ["/enerzyz-logo-long.png"],
+  },
 };
 
 export default function BookADemoPage() {
@@ -17,7 +42,8 @@ export default function BookADemoPage() {
             description="Share your details and we’ll assemble a live control room demo that mirrors your asset stack."
             submitLabel="Submit"
             className="space-y-0"
-          />
+          /> 
+          
         </div>
         <p className="text-center text-xs uppercase tracking-[0.28em] text-white/40">
           Enerzyz unifies energy asset management to make your facility sentient

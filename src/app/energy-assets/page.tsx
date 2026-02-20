@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Energy Assets — Enerzyz",
-  description: "What energy assets are and why managing them matters for operations and sustainability.",
+  title: "What Are Energy Assets? — Understanding HVAC, Chillers, Generators & More | Enerzyz",
+  description:
+    "Energy assets are the engines, motors, pumps, batteries, chillers, and generators that power modern civilization. Learn how AI-driven management from Enerzyz can cut $8 trillion in global energy waste.",
+  keywords: [
+    "energy assets",
+    "what are energy assets",
+    "HVAC systems",
+    "chiller systems",
+    "building energy systems",
+    "energy asset management",
+    "facility energy optimization",
+    "electromechanical assets",
+  ],
+  alternates: { canonical: "https://enerzyz.com/energy-assets" },
+  openGraph: {
+    type: "article",
+    url: "https://enerzyz.com/energy-assets",
+    title: "What Are Energy Assets? | Enerzyz",
+    description: "The $16 trillion global energy asset problem — and how AI is solving it.",
+    siteName: "Enerzyz",
+  },
 };
 
 export default function EnergyAssets() {
@@ -12,7 +31,7 @@ export default function EnergyAssets() {
       <section className="space-y-6 text-white/80">
         <h2 className="text-2xl font-semibold">What are energy assets?</h2>
         <p>
-          Energy assets are anything that transforms energy: engines, motors, pumps, batteries, solar panels, inverters, transformers, and countless others. These are the building blocks of modern civilization. Without them, we’d still be relying on manual labor and animal power. Every sector of the economy depends on these assets, yet we still struggle to operate them efficiently.
+          Energy assets are anything that transforms energy: engines, motors, HVAC systems (pumps,compressors), batteries, solar panels, inverters, generators, transformers, and countless others. These are the building blocks of modern civilization. Without them, we’d still be relying on manual labor and animal power. Every sector of the economy depends on these assets, yet we still struggle to operate them efficiently.
         </p>
 
         <p>
@@ -29,7 +48,7 @@ export default function EnergyAssets() {
 
         <h3 className="text-lg font-semibold">Our deeper mission?</h3>
         <p>
-          We’re building the foundation for seamless, integrated machine intelligence preparing the world’s physical infrastructure for the era of AGI.
+          We’re building the foundation for seamless, integrated machine intelligence preparing the world’s physical infrastructure for the era of ASI.
         </p>
       </section>
     </main>

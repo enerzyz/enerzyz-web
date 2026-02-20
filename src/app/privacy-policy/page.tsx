@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — Enerzyz",
   description:
     "How Enerzyz collects, uses, retains, and protects personal data for customers, partners and visitors.",
+  alternates: { canonical: "https://enerzyz.com/privacy-policy" },
 };
 
 export default function PrivacyPolicy() {

@@ -5,6 +5,7 @@ import type { SVGProps } from "react";
 import { useCallback, useEffect, useState } from "react";
 
 import { BookDemoForm } from "./book-demo-form";
+import { CloseIcon } from "./icons";
 
 function ArrowUpRightIcon(props: SVGProps<SVGSVGElement>) {
 	return (
@@ -111,15 +112,15 @@ export function EarlyAccessButton({
 						animate={{ opacity: 1, y: 0, scale: 1 }}
 						exit={{ opacity: 0, y: 12, scale: 0.98 }}
 						transition={{ duration: 0.25, ease: "easeOut" }}
-						className="relative z-10 w-full max-w-lg overflow-hidden rounded-3xl border border-white/10 bg-[rgba(4,6,20,0.92)] p-8 text-left text-white shadow-[0_32px_80px_rgba(2,6,23,0.65)]"
+						className="relative z-10 w-full max-w-lg rounded-3xl border border-white/10 bg-[rgba(4,6,20,0.92)] p-8 pt-12 text-left text-white shadow-[0_32px_80px_rgba(2,6,23,0.65)]"
 					>
 						<button
 							type="button"
 							onClick={closeModal}
-							className="absolute right-4 top-4 rounded-full border border-white/10 bg-white/10 p-2 text-white/70 transition hover:text-white"
+							className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/80 transition hover:bg-white/20 hover:text-white"
 							aria-label="Close form"
 						>
-							×
+							<CloseIcon className="h-4.5 w-4.5" />
 						</button>
 						<BookDemoForm
 							key={formKey}

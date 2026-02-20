@@ -32,6 +32,14 @@ const features: Feature[] = [
 export function FeatureGrid() {
   return (
     <section className="relative mx-auto mt-32 max-w-6xl px-6 lg:px-8">
+      <div className="mb-14 text-center">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-sky-300/80">
+          Core capabilities
+        </span>
+        <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
+          Intelligence built into every layer
+        </h2>
+      </div>
       <div className="grid gap-8 lg:grid-cols-3">
         {features.map((feature) => (
           <article

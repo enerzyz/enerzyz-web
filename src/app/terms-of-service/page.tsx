@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service — Enerzyz",
   description: "The terms governing use of Enerzyz services and website.",
+  alternates: { canonical: "https://enerzyz.com/terms-of-service" },
 };
 
 export default function TermsOfService() {
