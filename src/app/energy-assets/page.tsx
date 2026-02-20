@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Energy Assets — Enerzyz",
-  description: "What energy assets are and why managing them matters for operations and sustainability.",
+  title: "What Are Energy Assets? — Understanding HVAC, Chillers, Generators & More | Enerzyz",
+  description:
+    "Energy assets are the engines, motors, pumps, batteries, chillers, and generators that power modern civilization. Learn how AI-driven management from Enerzyz can cut $8 trillion in global energy waste.",
+  keywords: [
+    "energy assets",
+    "what are energy assets",
+    "HVAC systems",
+    "chiller systems",
+    "building energy systems",
+    "energy asset management",
+    "facility energy optimization",
+    "electromechanical assets",
+  ],
+  alternates: { canonical: "https://enerzyz.com/energy-assets" },
+  openGraph: {
+    type: "article",
+    url: "https://enerzyz.com/energy-assets",
+    title: "What Are Energy Assets? | Enerzyz",
+    description: "The $16 trillion global energy asset problem — and how AI is solving it.",
+    siteName: "Enerzyz",
+  },
 };
 
 export default function EnergyAssets() {
