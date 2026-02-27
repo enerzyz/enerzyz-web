@@ -6,7 +6,6 @@ const productLinks = [
   { label: "For Asset Owners", href: "/solutions/asset-owners" },
   { label: "For Asset Operators", href: "/solutions/asset-operators" },
   { label: "For Manufacturers", href: "/solutions/manufacturers" },
-  { label: "Energy Assets", href: "/energy-assets" },
 ];
 
 const companyLinks = [
@@ -15,6 +14,11 @@ const companyLinks = [
   { label: "Partner With Us", href: "mailto:ai@enerzyz.com?subject=Partnership%20Proposal" },
   { label: "Contact Engineering", href: "mailto:team@enerzyz.com" },
   { label: "SLA & Support", href: "/sla-support" },
+];
+
+const resourceLinks = [
+  { label: "Blog", href: "/blog" },
+  { label: "Energy Assets", href: "/energy-assets" },
 ];
 
 const legalLinks = [
@@ -32,7 +36,7 @@ export function SiteFooter() {
     <footer className="mx-auto mt-32 w-full max-w-6xl px-6 pb-12 lg:px-8">
       <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-8 py-12 md:px-12">
         {/* Top row: logo + columns */}
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.4fr_1fr_1fr_0.8fr_1fr]">
           {/* Brand column */}
           <div className="space-y-5">
             <Link href="/" aria-label="Enerzyz home" className="inline-block">
@@ -106,6 +110,25 @@ export function SiteFooter() {
                       {link.label}
                     </Link>
                   )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Resources */}
+          <nav aria-label="Resource links">
+            <h3 className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/60">
+              Resources
+            </h3>
+            <ul className="mt-4 space-y-3">
+              {resourceLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 transition hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
