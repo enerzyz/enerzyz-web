@@ -2,96 +2,148 @@
 
 import { motion } from "framer-motion";
 
-const codeLines = [
+type Integration = {
+  name: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+const integrations: Integration[] = [
   {
-    prefix: "const",
-    snippet: "client = EnerzyzClient(api_key=\"YOUR_API_KEY\");",
+    name: "BACnet",
+    description: "Building automation & HVAC",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+        <rect x="3" y="3" width="18" height="18" rx="3" />
+        <path d="M8 8h8M8 12h8M8 16h5" />
+      </svg>
+    ),
   },
   {
-    prefix: "const",
-    snippet: "facility = client.facilities.connect(\"NY_Office\");",
+    name: "Modbus",
+    description: "Industrial controllers & PLCs",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+        <circle cx="8" cy="6" r="1.5" fill="currentColor" />
+        <circle cx="16" cy="12" r="1.5" fill="currentColor" />
+        <circle cx="12" cy="18" r="1.5" fill="currentColor" />
+      </svg>
+    ),
   },
   {
-    prefix: "const",
-    snippet: "telemetry = facility.get_live_metrics();",
+    name: "OPC-UA",
+    description: "SCADA & process systems",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 3v18M3 12h18" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+    ),
   },
   {
-    prefix: "const",
-    snippet: "insight = Optimizer({ objectives: ['efficiency'] }).run(telemetry);",
+    name: "MQTT",
+    description: "IoT sensors & edge devices",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+        <path d="M12 20V10" />
+        <path d="M6 16l6-6 6 6" />
+        <circle cx="12" cy="6" r="2" />
+        <circle cx="4" cy="18" r="2" />
+        <circle cx="20" cy="18" r="2" />
+      </svg>
+    ),
   },
   {
-    prefix: "await",
-    snippet: "facility.apply_optimization(insight);",
+    name: "REST API",
+    description: "Cloud platforms & ERP",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+        <path d="M7 8l-4 4 4 4" />
+        <path d="M17 8l4 4-4 4" />
+        <path d="M14 4l-4 16" />
+      </svg>
+    ),
   },
 ];
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
+};
+
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.08 } },
+};
 
 export function CodeShowcase() {
   return (
     <section className="relative mx-auto mt-32 max-w-6xl px-6 lg:px-8">
-      <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-6">
-          <span className="text-xs uppercase tracking-[0.3em] text-sky-200/80">
-            seamless integration
-          </span>
-          <h2 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
-            <span className="animate-text-glow">Super Readable API</span>  to connect siloed
-              systems lightning fast.
-          </h2>
-          <p className="text-lg text-white/70">
-            Connect assets to the bus and start working with the assets data.
-            Inspect causal graphs, observe asset status updates, and trace generation and consumption flow.
-          </p>
-          <div className="flex flex-wrap gap-3 text-sm text-white/60">
-            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
-              Universal API
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
-              Asset Status Updates  
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/5 px-4 py-2">
-              Forecast intelligence
-            </span>
-          </div>
-        </div>
-        <motion.div
-          className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-[0_30px_80px_rgba(6,12,31,0.45)]"
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <div className="mb-4 flex items-center gap-2 text-xs text-white/40">
-            <span className="h-2.5 w-2.5 rounded-full bg-sky-300/80" />
-            <span className="h-2.5 w-2.5 rounded-full bg-amber-300/70" />
-            <span className="h-2.5 w-2.5 rounded-full bg-rose-400/60" />
-            <span className="ml-auto rounded-full border border-white/20 px-3 py-1 font-medium uppercase tracking-[0.2em] text-[10px] text-white/60">
-              Enerzyz CLI
-            </span>
-          </div>
-          <div className="relative overflow-hidden rounded-2xl bg-black/60 p-6">
-            <code className="space-y-4 text-sm text-white/80">
-              {codeLines.map((line, index) => (
-                <motion.div
-                  key={line.snippet}
-                  className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/5 px-4 py-3"
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.6 }}
-                  transition={{ duration: 0.6, delay: index * 0.12, ease: "easeOut" }}
-                >
-                  <span className="pr-3 font-medium uppercase tracking-[0.32em] text-[10px] text-sky-200/80">
-                    {line.prefix}
-                  </span>
-                  <span className="font-mono text-[13px] text-white/90">
-                    {line.snippet}
-                  </span>
-                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(94,181,255,0)_0%,rgba(94,181,255,0.25)_48%,rgba(88,179,255,0)_100%)] opacity-0 transition duration-500 group-hover:opacity-100" />
-                </motion.div>
-              ))}
-            </code>
-          </div>
-        </motion.div>
+      {/* Header */}
+      <div className="mb-14 text-center">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-sky-300/80">
+          Seamless integration
+        </span>
+        <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
+          Connect in hours, not months
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base text-white/60">
+          Enerzyz bridges every protocol in your facility into one unified
+          control plane — no rip-and-replace, no custom middleware. Plug into
+          your existing infrastructure and go live the same week.
+        </p>
       </div>
+
+      {/* Protocol grid */}
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={stagger}
+        className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+      >
+        {integrations.map((item) => (
+          <motion.div
+            key={item.name}
+            variants={fadeUp}
+            className="group relative flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-7 text-center transition duration-500 hover:border-sky-400/30 hover:bg-white/[0.06]"
+          >
+            <div className="text-sky-300/70 transition duration-300 group-hover:text-sky-300">
+              {item.icon}
+            </div>
+            <h3 className="text-sm font-semibold text-white">{item.name}</h3>
+            <p className="text-[11px] leading-relaxed text-white/45">
+              {item.description}
+            </p>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      {/* Bottom stats strip */}
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-white/50"
+      >
+        <span className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          Zero downtime onboarding
+        </span>
+        <span className="hidden h-4 w-px bg-white/15 sm:block" />
+        <span className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          Protocol auto-discovery
+        </span>
+        <span className="hidden h-4 w-px bg-white/15 sm:block" />
+        <span className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          Unified control plane
+        </span>
+      </motion.div>
     </section>
   );
 }

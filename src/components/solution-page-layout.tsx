@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BookDemoForm } from "./book-demo-form";
+import { Breadcrumbs } from "./breadcrumbs";
 
 /* ─── Shared types ─── */
 export type PainPoint = {
@@ -36,6 +37,8 @@ export type SolutionPageProps = {
   headline: string;
   subheadline: string;
   heroStats: Stat[];
+  /* Breadcrumb */
+  breadcrumbLabel: string;
   /* Pain points */
   painSectionTitle: string;
   painSectionSubtitle: string;
@@ -72,8 +75,15 @@ export function SolutionPageLayout(props: SolutionPageProps) {
       {/* Ambient glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(56,189,248,0.18),transparent_60%)]" aria-hidden />
 
+      <Breadcrumbs
+        items={[
+          { label: "Solutions", href: "/" },
+          { label: props.breadcrumbLabel },
+        ]}
+      />
+
       {/* ─── Hero ─── */}
-      <section className="relative mx-auto max-w-6xl px-6 pb-20 pt-36 lg:px-8 lg:pt-44">
+      <section className="relative mx-auto max-w-6xl px-6 pb-20 pt-10 lg:px-8 lg:pt-14">
         <motion.div
           initial="hidden"
           animate="show"

@@ -22,6 +22,7 @@ export function ManufacturersPage() {
         { value: "5–10×", label: "Lifetime customer value" },
         { value: "100%", label: "Field visibility" },
       ]}
+      breadcrumbLabel="Manufacturers"
 
       /* ─── Pain Points ─── */
       painSectionTitle="The manufacturer's dilemma"

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import type { FormEvent } from "react";
 import { useCallback, useEffect, useState } from "react";
 
-type FieldKey = "name" | "email" | "phone";
+type FieldKey = "name" | "email" | "phone" | "company" | "jobTitle" | "challenge";
 
 type FormState = Record<FieldKey, string>;
 
@@ -18,6 +18,8 @@ const defaultFields: Array<{
   type: string;
   required: boolean;
   placeholder: string;
+  isSelect?: boolean;
+  options?: string[];
 }> = [
   {
     key: "name",
@@ -34,11 +36,42 @@ const defaultFields: Array<{
     placeholder: "you@company.com",
   },
   {
+    key: "company",
+    label: "Company Name",
+    type: "text",
+    required: false,
+    placeholder: "Acme Facilities Group",
+  },
+  {
+    key: "jobTitle",
+    label: "Job Title",
+    type: "text",
+    required: false,
+    placeholder: "VP of Engineering",
+  },
+  {
     key: "phone",
     label: "Contact Number",
     type: "tel",
     required: false,
     placeholder: "+1 222 555 0199",
+  },
+  {
+    key: "challenge",
+    label: "Primary Challenge",
+    type: "text",
+    required: false,
+    placeholder: "Select your primary challenge",
+    isSelect: true,
+    options: [
+      "Reducing energy costs",
+      "Extending asset life / predictive maintenance",
+      "Unifying BMS / SCADA systems",
+      "ESG reporting & compliance",
+      "Multi-site portfolio management",
+      "Embedding AI into our equipment (OEMs)",
+      "Other",
+    ],
   },
 ];
 
@@ -67,13 +100,16 @@ export function BookDemoForm({
     name: "",
     email: "",
     phone: "",
+    company: "",
+    jobTitle: "",
+    challenge: "",
   });
   const [errors, setErrors] = useState<Partial<Record<FieldKey, string>>>({});
   const [submissionState, setSubmissionState] = useState<SubmissionState>("idle");
   const [serverError, setServerError] = useState<string | null>(null);
 
   const resetForm = useCallback(() => {
-    setFormState({ name: "", email: "", phone: "" });
+    setFormState({ name: "", email: "", phone: "", company: "", jobTitle: "", challenge: "" });
     setErrors({});
     setServerError(null);
     setSubmissionState("idle");
@@ -132,6 +168,9 @@ export function BookDemoForm({
             name: formState.name,
             businessEmail: formState.email,
             contactNumber: formState.phone,
+            company: formState.company,
+            jobTitle: formState.jobTitle,
+            challenge: formState.challenge,
           }),
         });
 
@@ -145,14 +184,14 @@ export function BookDemoForm({
         }
 
   setSubmissionState("success");
-  setFormState({ name: "", email: "", phone: "" });
+  setFormState({ name: "", email: "", phone: "", company: "", jobTitle: "", challenge: "" });
       } catch (error) {
         console.error("Submission failed", error);
         setServerError("Network error. Please try again shortly.");
         setSubmissionState("error");
       }
     },
-    [formState.email, formState.name, formState.phone, validate],
+    [formState, validate],
   );
 
   const isLoading = submissionState === "loading";
@@ -179,20 +218,37 @@ export function BookDemoForm({
               {field.label}
               {field.required ? " *" : null}
             </label>
-            <input
-              id={`book-demo-${field.key}`}
-              name={field.key}
-              type={field.type}
-              required={field.required}
-              value={formState[field.key]}
-              onChange={(event) => handleChange(field.key, event.target.value)}
-              aria-invalid={errors[field.key] ? "true" : "false"}
-              aria-describedby={
-                errors[field.key] ? `error-${field.key}` : undefined
-              }
-              placeholder={field.placeholder}
-              className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/30 transition focus:border-sky-400/60 focus:outline-none focus:ring-2 focus:ring-sky-500/40"
-            />
+            {field.isSelect ? (
+              <select
+                id={`book-demo-${field.key}`}
+                name={field.key}
+                required={field.required}
+                value={formState[field.key]}
+                onChange={(event) => handleChange(field.key, event.target.value)}
+                aria-invalid={errors[field.key] ? "true" : "false"}
+                className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white transition focus:border-sky-400/60 focus:outline-none focus:ring-2 focus:ring-sky-500/40 [&>option]:bg-slate-900 [&>option]:text-white"
+              >
+                <option value="" className="text-white/30">{field.placeholder}</option>
+                {field.options?.map((opt) => (
+                  <option key={opt} value={opt}>{opt}</option>
+                ))}
+              </select>
+            ) : (
+              <input
+                id={`book-demo-${field.key}`}
+                name={field.key}
+                type={field.type}
+                required={field.required}
+                value={formState[field.key]}
+                onChange={(event) => handleChange(field.key, event.target.value)}
+                aria-invalid={errors[field.key] ? "true" : "false"}
+                aria-describedby={
+                  errors[field.key] ? `error-${field.key}` : undefined
+                }
+                placeholder={field.placeholder}
+                className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/30 transition focus:border-sky-400/60 focus:outline-none focus:ring-2 focus:ring-sky-500/40"
+              />
+            )}
             {errors[field.key] ? (
               <p id={`error-${field.key}`} className="text-xs font-medium text-rose-300">
                 {errors[field.key]}

@@ -22,6 +22,7 @@ export function AssetOwnersPage() {
         { value: "25%+", label: "Asset life extended" },
         { value: "2–5×", label: "ROI within 12 months" },
       ]}
+      breadcrumbLabel="Asset Owners"
 
       /* ─── Pain Points ─── */
       painSectionTitle="The hidden cost of reactive asset management"

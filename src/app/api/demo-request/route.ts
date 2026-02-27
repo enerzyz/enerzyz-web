@@ -22,6 +22,12 @@ export async function POST(request: Request) {
       typeof body.businessEmail === "string" ? body.businessEmail.trim() : "";
     const contactNumber =
       typeof body.contactNumber === "string" ? body.contactNumber.trim() : "";
+    const company =
+      typeof body.company === "string" ? body.company.trim() : "";
+    const jobTitle =
+      typeof body.jobTitle === "string" ? body.jobTitle.trim() : "";
+    const challenge =
+      typeof body.challenge === "string" ? body.challenge.trim() : "";
     if (!name || !businessEmail) {
       return NextResponse.json(
         { error: "Missing required fields." },
@@ -36,6 +42,15 @@ export async function POST(request: Request) {
 
     if (contactNumber) {
       fields["Contact Number"] = contactNumber;
+    }
+    if (company) {
+      fields["Company"] = company;
+    }
+    if (jobTitle) {
+      fields["Job Title"] = jobTitle;
+    }
+    if (challenge) {
+      fields["Primary Challenge"] = challenge;
     }
 
     const airtableResponse = await fetch(airtableUrl, {

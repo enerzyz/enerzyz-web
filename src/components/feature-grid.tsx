@@ -27,6 +27,27 @@ const features: Feature[] = [
       "Every agentic action carries its justification trail. Exportable reports keep managers and auditors aligned.",
     metric: "Transparent decision logs",
   },
+  {
+    eyebrow: "Seamless integration",
+    title: "Protocol-agnostic connectivity",
+    description:
+      "Bridge BACnet, Modbus, OPC-UA, MQTT, and REST APIs into one unified control plane — no rip-and-replace required.",
+    metric: "Connect in hours, not months",
+  },
+  {
+    eyebrow: "Demand response",
+    title: "Monetize flexibility & cut peak charges",
+    description:
+      "Automatically shift loads to off-peak periods, coordinate battery dispatch, and pre-cool buildings before tariff spikes.",
+    metric: "15–20% peak demand reduction",
+  },
+  {
+    eyebrow: "Lifecycle intelligence",
+    title: "Extend asset life 25%+ & defer CapEx",
+    description:
+      "Continuously monitor vibration, pressure, and current signatures to detect degradation weeks before failure — and optimally load-balance to equalize wear.",
+    metric: "40% fewer unplanned breakdowns",
+  },
 ];
 
 export function FeatureGrid() {
@@ -39,8 +60,11 @@ export function FeatureGrid() {
         <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
           Intelligence built into every layer
         </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base text-white/60">
+          Six pillars that make Enerzyz the operating system your energy assets were waiting for.
+        </p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <article
             key={feature.title}
