@@ -91,7 +91,7 @@ export function CodeShowcase() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-base text-white/60">
           Enerzyz bridges every protocol in your facility into one unified
-          control plane — no rip-and-replace, no custom middleware. Plug into
+          control plane, no rip-and-replace, no custom middleware. Plug into
           your existing infrastructure and go live the same week.
         </p>
       </div>

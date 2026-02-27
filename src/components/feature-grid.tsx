@@ -31,7 +31,7 @@ const features: Feature[] = [
     eyebrow: "Seamless integration",
     title: "Protocol-agnostic connectivity",
     description:
-      "Bridge BACnet, Modbus, OPC-UA, MQTT, and REST APIs into one unified control plane — no rip-and-replace required.",
+      "Bridge BACnet, Modbus, OPC-UA, MQTT, and REST APIs into one unified control plane: no rip-and-replace required.",
     metric: "Connect in hours, not months",
   },
   {
@@ -45,7 +45,7 @@ const features: Feature[] = [
     eyebrow: "Lifecycle intelligence",
     title: "Extend asset life 25%+ & defer CapEx",
     description:
-      "Continuously monitor vibration, pressure, and current signatures to detect degradation weeks before failure — and optimally load-balance to equalize wear.",
+      "Continuously monitor vibration, pressure, and current signatures to detect degradation weeks before failure and optimally load-balance to equalize wear.",
     metric: "40% fewer unplanned breakdowns",
   },
 ];
