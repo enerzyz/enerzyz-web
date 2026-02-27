@@ -1,6 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const socials = [
+  {
+    name: "X",
+    href: "https://x.com/enerzyz",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth={1.6} stroke="currentColor" className="h-4 w-4">
+        <path d="M4 4l16 16" />
+        <path d="M20 4L4 20" />
+      </svg>
+    ),
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/enerzyz",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v15H0zM8 8h4.8v2.17h.07c.67-1.27 2.32-2.6 4.78-2.6C21.4 7.57 24 10 24 14.42V23H19v-7.5c0-1.79-.03-4.09-2.5-4.09-2.5 0-2.88 1.95-2.88 3.96V23H8z" />
+      </svg>
+    ),
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@Enerzyz",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
+      </svg>
+    ),
+  },
+];
+
 const productLinks = [
   { label: "Enerzyz OS", href: "https://os.enerzyz.com", external: true },
   { label: "For Asset Owners", href: "/solutions/asset-owners" },
@@ -154,6 +185,20 @@ export function SiteFooter() {
         <div className="mt-12 border-t border-white/[0.06] pt-6">
           <div className="flex flex-col items-center justify-between gap-4 text-xs text-white/40 md:flex-row">
             <span>© {year} Enerzyz. All rights reserved.</span>
+            <div className="flex items-center gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.name}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
+                  className="grid h-8 w-8 place-items-center rounded-full border border-white/10 text-white/50 transition hover:border-sky-400/40 hover:text-white"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
             <span className="text-center uppercase tracking-[0.2em]">
               On the pursuit to become a Kardashev Type 1 Civilization
             </span>

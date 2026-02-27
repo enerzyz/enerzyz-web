@@ -7,13 +7,13 @@ const steps = [
     number: "01",
     title: "Connect",
     description:
-      "Plug Enerzyz into your existing BMS, SCADA, IoT sensors, and metering infrastructure via BACnet, Modbus, OPC-UA, MQTT, or REST API ensuring no rip-and-replace.",
+      "Plug Enerzyz into your existing BMS, SCADA, PLC, IoT sensors, and metering infrastructure via BACnet, Modbus, OPC-UA, MQTT, or REST API ensuring no rip-and-replace.",
   },
   {
     number: "02",
     title: "Ingest & Learn",
     description:
-      "The OS streams real-time telemetry from asset controllers along with temperatures, pressures, currents, occupancy, weather, tariffs and builds a physics-informed digital twin of your facility within days.",
+      "The OS streams real-time telemetry from asset controllers along with various internal and external parameters such as temperatures, pressures, currents, occupancy, weather, tariffs and builds a physics-informed digital twin of your facility within days.",
   },
   {
     number: "03",
@@ -25,7 +25,7 @@ const steps = [
     number: "04",
     title: "Measure & Report",
     description:
-      "Track energy savings, maintenance cost reduction, carbon offsets, and NOI impact in real-time dashboards. Auto-generate investor-grade ESG and compliance reports.",
+      "Track energy savings, maintenance cost reduction, carbon offsets, and NOI impact in real-time dashboards. Auto-generate investor-grade ESG and compliance reports. Enerzyz follows IFSR S1 and S2 standards.",
   },
 ];
 
@@ -50,7 +50,7 @@ export function HowItWorks() {
           From legacy stack to autonomous facility in weeks
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-base text-white/60">
-          A four-step deployment that starts delivering savings from day one —
+          A four-step deployment that starts delivering savings from day one with
           no downtime, no disruption.
         </p>
       </div>
