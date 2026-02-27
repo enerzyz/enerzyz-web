@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
-import { SocialDock } from "@/components/social-dock";
 import { SiteHeader } from "@/components/site-header";
 import CookieBanner from "@/components/cookie-banner";
 import "./globals.css";
@@ -195,7 +194,6 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <CookieBanner />
-        <SocialDock />
       </body>
     </html>
   );
