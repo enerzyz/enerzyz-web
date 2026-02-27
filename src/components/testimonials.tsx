@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 type Testimonial = {
@@ -13,25 +14,25 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Within 90 days of deploying Enerzyz across our portfolio, we saw a 28% reduction in energy spend and eliminated every single unplanned chiller shutdown. Our maintenance team went from firefighting to strategic planning overnight.",
-    name: "VP of Engineering",
+      "Within 90 days of deploying Enerzyz across our portfolio, we saw a 28% reduction in energy spend and eliminated every single unplanned chiller shutdown. We are also tracking sustainability metrics for our entire portfolio through this OS.",
+    name: "Director of Facility Operations",
     title: "Commercial Real Estate Portfolio",
-    company: "120+ managed properties",
+    company: "Large International Development Bank",
     metric: "28% energy cost reduction",
   },
   {
     quote:
-      "We used to send technicians to site blind — no context, no history, just a ticket number. Enerzyz gives our dispatch team root cause analysis before the truck even leaves. First-time fix rates jumped from 52% to 87%.",
-    name: "Director of Operations",
-    title: "National HVAC Service Provider",
-    company: "450+ managed contracts",
+      "We used to send technicians to site blind with no context, no history, just a ticket number. Enerzyz gives our dispatch team root cause analysis before the team even leaves. First-time fix rates jumped from 52% to 87%.",
+    name: "Propietor",
+    title: "National Chiller Service Provider",
+    company: "100+ managed contracts",
     metric: "87% first-time fix rate",
   },
   {
     quote:
-      "Embedding Enerzyz into our VRF line gave us field telemetry we never had. We cut warranty costs 35% in the first year and our product team finally has real-world performance data to close the lab-to-field gap.",
-    name: "Head of Digital Products",
-    title: "HVAC Equipment Manufacturer",
+      "Embedding Enerzyz for Transformer health indexing gave us field telemetry we never had. We cut warranty costs 35% in the first year and our product team finally has real-world performance data to close the lab-to-field gap.",
+    name: "Chairman",
+    title: "Transformer Manufacturer",
     company: "Global OEM",
     metric: "35% warranty cost reduction",
   },
@@ -102,6 +103,22 @@ export function Testimonials() {
             </div>
           </motion.blockquote>
         ))}
+      </motion.div>
+
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mt-12 text-center"
+      >
+        <Link
+          href="/book-a-demo"
+          className="inline-block rounded-full bg-sky-500 px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-slate-950 transition hover:bg-sky-400"
+        >
+          Hear From the Clients Themselves
+        </Link>
       </motion.div>
     </section>
   );

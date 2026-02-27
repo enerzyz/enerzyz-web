@@ -24,27 +24,27 @@ const values = [
   {
     title: "Engineering-First",
     description:
-      "We're engineers building for engineers. Our platform is designed for the people who actually run buildings — not boardroom slides. Clean APIs, transparent decisions, real-time control.",
+      "We're engineers building for engineers. Our platform is designed for the people who actually run buildings not boardroom slides. Clean APIs, transparent decisions, real-time control.",
   },
   {
     title: "Outcomes Over Features",
     description:
-      "We measure success in dollars saved, equipment-years extended, and carbon tons avoided — not feature counts. Every capability ships because it moves a measurable needle.",
+      "We measure success in dollars saved, equipment-years extended, and carbon tons avoided, not feature counts. Every capability ships because it moves a measurable needle.",
   },
   {
-    title: "Protocol Agnostic",
+    title: "Sustainability & Climate Compliance",
     description:
-      "Buildings are heterogeneous. We bridge BACnet, Modbus, OPC-UA, MQTT, REST, and proprietary protocols into a unified control plane — because integration shouldn't be the bottleneck.",
+      "Every kilowatt-hour saved is tracked and auditable. Enerzyz maps energy and emissions data to IFRS S1 and S2 climate disclosure standards, helping facilities meet ISSB sustainability reporting requirements with real-time Scope 1 & 2 metrics, carbon accounting, and ESG-ready dashboards.",
   },
 ];
 
-const milestones = [
-  { year: "2024", event: "Founded with a mission to make every powered facility self-optimizing." },
-  { year: "2024", event: "Joined NVIDIA Inception and Antler accelerator programs." },
-  { year: "2025", event: "Affiliated with Stanford, World Bank, and ASHRAE." },
-  { year: "2025", event: "Deployed across 120+ sites with 2,390 MWH equivalent savings." },
-  { year: "2026", event: "Expanding to multi-continent portfolio orchestration." },
-];
+// const milestones = [
+//   { year: "2025", event: "Founded with a mission to make every powered facility self-optimizing." },
+//   { year: "2025", event: "Joined NVIDIA Inception and Antler accelerator programs." },
+//   { year: "2025", event: "Affiliated with Stanford, World Bank, and ASHRAE." },
+//   { year: "2025", event: "Deployed across 120+ sites with 2,390 MWH equivalent savings." },
+//   { year: "2026", event: "Expanding to multi-continent portfolio orchestration." },
+// ];
 
 const affiliationLogos = [
   { src: "/logos/stanford.svg", alt: "Stanford University" },
@@ -199,7 +199,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Timeline – commented out
       <section className="relative mx-auto max-w-4xl px-6 py-20 lg:px-8">
         <div className="mb-10 text-center">
           <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-sky-300/80">
@@ -228,6 +228,7 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+      */}
 
       {/* CTA */}
       <section className="relative mx-auto max-w-4xl px-6 py-20 lg:px-8">

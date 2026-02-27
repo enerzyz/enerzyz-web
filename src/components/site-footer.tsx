@@ -49,12 +49,8 @@ export function SiteFooter() {
               />
             </Link>
             <p className="text-sm leading-relaxed text-white/50">
-              AI operating system for energy assets. Predictive optimization for
-              HVAC, chillers, generators, BESS, pumps &amp; more.
+              AI operating system for energy assets.
             </p>
-            <div className="text-xs text-white/40">
-              <p>team@enerzyz.com</p>
-            </div>
           </div>
 
           {/* Product */}
