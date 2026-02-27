@@ -15,7 +15,7 @@ export function CTASection() {
           Integrate us into your microgrid within weeks, not quarters.
         </h2>
         <p className="mx-auto max-w-2xl text-lg text-white/70">
-          Deploy Enerzyz as the brain layer for your existing control stack —
+          Deploy Enerzyz as the brain layer for your existing control stack:
           save from day one while the OS learns your operations.
         </p>
         <div className="flex flex-wrap justify-center gap-4">

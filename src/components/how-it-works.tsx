@@ -7,19 +7,19 @@ const steps = [
     number: "01",
     title: "Connect",
     description:
-      "Plug Enerzyz into your existing BMS, SCADA, IoT sensors, and metering infrastructure via BACnet, Modbus, OPC-UA, MQTT, or REST API — no rip-and-replace.",
+      "Plug Enerzyz into your existing BMS, SCADA, IoT sensors, and metering infrastructure via BACnet, Modbus, OPC-UA, MQTT, or REST API ensuring no rip-and-replace.",
   },
   {
     number: "02",
     title: "Ingest & Learn",
     description:
-      "The OS streams real-time telemetry — temperatures, pressures, currents, occupancy, weather, tariffs — and builds a physics-informed digital twin of your facility within days.",
+      "The OS streams real-time telemetry from asset controllers along with temperatures, pressures, currents, occupancy, weather, tariffs and builds a physics-informed digital twin of your facility within days.",
   },
   {
     number: "03",
     title: "Optimize",
     description:
-      "AI agents autonomously orchestrate setpoints, staging, and schedules every 60 seconds to find global optima — with full human-in-the-loop oversight and justification trails.",
+      "AI agents autonomously orchestrate setpoints, staging, and schedules every 60 seconds to find global optima with full human-in-the-loop oversight and justification trails.",
   },
   {
     number: "04",
