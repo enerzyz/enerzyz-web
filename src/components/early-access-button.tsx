@@ -37,7 +37,7 @@ export type EarlyAccessButtonProps = {
 
 export function EarlyAccessButton({
 	className = "",
-	label = "Experience It",
+	label = "Request a Demo",
 }: EarlyAccessButtonProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	const [formKey, setFormKey] = useState(0);

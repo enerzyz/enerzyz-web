@@ -24,18 +24,14 @@ const solutions = [
 ];
 
 export function SiteHeader() {
-  const [isHidden, setIsHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsHidden(window.scrollY > 60);
-      if (window.scrollY > 60) {
-        setMenuOpen(false);
-        setMobileOpen(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
 
     handleScroll();
@@ -56,10 +52,11 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full transition-opacity duration-300 ${
-        isHidden ? "pointer-events-none opacity-0" : "opacity-100"
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "border-b border-white/[0.06] bg-slate-950/80 shadow-[0_4px_30px_rgba(2,6,23,0.5)] backdrop-blur-xl"
+          : "bg-transparent"
       }`}
-      aria-hidden={isHidden}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between p-5 lg:p-6">
         {/* Left: Logo + tagline */}
@@ -130,6 +127,13 @@ export function SiteHeader() {
           </div>
 
           <Link
+            href="/about"
+            className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:text-white"
+          >
+            About
+          </Link>
+
+          <Link
             href="/book-a-demo"
             className="rounded-full border border-white/20 bg-white/[0.06] px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:border-sky-400/40 hover:bg-sky-400/10 hover:text-white"
           >
@@ -173,6 +177,13 @@ export function SiteHeader() {
                   <span className="mt-0.5 block text-[10px] text-white/40">{item.description}</span>
                 </Link>
               ))}
+              <Link
+                href="/about"
+                onClick={() => setMobileOpen(false)}
+                className="mt-3 block py-3 text-sm font-medium text-white/80 transition hover:text-sky-300"
+              >
+                About
+              </Link>
               <Link
                 href="/book-a-demo"
                 onClick={() => setMobileOpen(false)}

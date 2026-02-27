@@ -75,7 +75,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.9, ease: "easeOut" }}
           >
-            Automate all your energy asset management through Enerzyz OS to ensure optimization at every second!
+            Deploy AI agents that optimize HVAC, chillers, generators, and every powered asset in your portfolio — cutting energy costs 30%+, extending equipment life 25%+, and delivering autonomous control with full human oversight.
           </motion.p>
 
           <motion.div

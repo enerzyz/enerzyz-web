@@ -22,6 +22,7 @@ export function AssetOperatorsPage() {
         { value: "3×", label: "Faster fault resolution" },
         { value: "45%", label: "Higher first-time fix rate" },
       ]}
+      breadcrumbLabel="Asset Operators"
 
       /* ─── Pain Points ─── */
       painSectionTitle="Why the best operators still struggle"
