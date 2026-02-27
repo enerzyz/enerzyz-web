@@ -85,9 +85,9 @@ export default function AboutPage() {
           >
             Enerzyz builds the AI operating system for energy assets. We combine
             physics-informed digital twins, predictive machine learning, and
-            autonomous agents to orchestrate HVAC, chillers, generators, BESS,
+            autonomous agents to orchestrate HVAC, generators, BESS,
             pumps, and every powered system in commercial and industrial
-            facilities — cutting waste, extending equipment life, and delivering
+            facilities by cutting waste, extending equipment life, and delivering
             net-zero outcomes at scale.
           </motion.p>
         </motion.div>
