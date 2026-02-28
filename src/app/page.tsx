@@ -12,14 +12,14 @@ import Affiliations from "@/components/affiliations";
 export const metadata: Metadata = {
   title: "Enerzyz | Autopilot for Energy Assets — AI-Powered Building & Facility Optimization",
   description:
-    "Enerzyz is the AI operating system for energy assets. Predictive optimization for HVAC, chillers, generators, BESS, pumps & more — cutting energy costs 30%+, extending asset life 25%+, and delivering autonomous facility management for commercial buildings, data centers, hospitals, and industrial plants.",
+    "Enerzyz is the AI operating system for energy assets - providing autonomous facility management for commercial buildings, data centers and industrial plants.",
   alternates: { canonical: "https://enerzyz.com" },
   openGraph: {
     type: "website",
     url: "https://enerzyz.com",
     title: "Enerzyz | Autopilot for Energy Assets",
     description:
-      "AI operating system that makes energy assets self-optimizing. Cut energy costs 30%+, extend equipment life 25%+, and hit net-zero targets — autonomously.",
+      "AI operating system that makes energy assets self-optimizing. Cut operational costs 30%+, extend equipment life 25%+, and hit net-zero targets — autonomously.",
     siteName: "Enerzyz",
     images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz — Autopilot for energy assets" }],
   },

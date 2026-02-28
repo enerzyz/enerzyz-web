@@ -23,8 +23,8 @@ const testimonials: Testimonial[] = [
   {
     quote:
       "We used to send technicians to site blind with no context, no history, just a ticket number. Enerzyz gives our dispatch team root cause analysis before the team even leaves. First-time fix rates jumped from 52% to 87%.",
-    name: "Propietor",
-    title: "National Chiller Service Provider",
+    name: "Sole Proprietor",
+    title: "Chiller AMC Service Provider",
     company: "100+ managed contracts",
     metric: "87% first-time fix rate",
   },
