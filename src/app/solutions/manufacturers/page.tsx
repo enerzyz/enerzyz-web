@@ -7,7 +7,7 @@ const PAGE_URL = `${SITE_URL}/solutions/manufacturers`;
 export const metadata: Metadata = {
   title: "For Equipment Manufacturers — Ship Smarter Connected Products | Enerzyz",
   description:
-    "Enerzyz helps chiller, HVAC, inverter, BESS, pump, generator, and engine manufacturers embed predictive AI intelligence into products — reducing warranty costs 40%, unlocking 5-10× customer lifetime value, and creating recurring revenue from connected equipment.",
+    "Enerzyz helps HVAC, inverter, BESS, compressor, generator, transformer and engine manufacturers embed predictive AI intelligence into products — reducing warranty costs 40%, unlocking 5-10× customer lifetime value, and creating recurring revenue from connected equipment.",
   keywords: [
     "chiller manufacturer IoT",
     "HVAC OEM connected product",
