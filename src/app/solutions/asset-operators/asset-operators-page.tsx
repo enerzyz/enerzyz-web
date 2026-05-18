@@ -145,7 +145,7 @@ export function AssetOperatorsPage() {
         {
           vertical: "Building Automation Integrators",
           painPoint: "Clients want AI optimization but your team doesn't have data science resources.",
-          outcome: "White-label Enerzyz as your AI layer. Connect via existing BACnet/Niagara/Modbus infrastructure and offer predictive analytics as a premium service tier — no ML team required.",
+          outcome: "Partner up with Enerzyz to embed our solution in your product or offerings. Connect via existing BACnet/Niagara/Modbus infrastructure and offer predictive analytics as a premium service tier — no ML team required.",
         },
       ]}
 
