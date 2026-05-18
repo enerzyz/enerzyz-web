@@ -69,7 +69,7 @@ const defaultFields: Array<{
       "Unifying BMS / SCADA systems",
       "ESG reporting & compliance",
       "Multi-site portfolio management",
-      "Embedding AI into our equipment (OEMs)",
+      "Embedding AI into our assets (OEMs)",
       "Other",
     ],
   },

@@ -14,8 +14,8 @@ export function ManufacturersPage() {
   return (
     <SolutionPageLayout
       /* ─── Hero ─── */
-      eyebrow="For Equipment Manufacturers"
-      headline="Your equipment, perpetually intelligent."
+      eyebrow="For Asset Manufacturers"
+      headline="Your assets, perpetually intelligent."
       subheadline="Chiller, HVAC, inverter, BESS, pump, generator, and engine manufacturers compete on specs but customers choose on outcomes. Enerzyz OS lets you embed a predictive AI brain into every unit you ship, transforming one-time hardware sales into recurring, data-driven revenue streams."
       heroStats={[
         { value: "40%", label: "Warranty cost reduction" },
@@ -26,7 +26,7 @@ export function ManufacturersPage() {
 
       /* ─── Pain Points ─── */
       painSectionTitle="The manufacturer's dilemma"
-      painSectionSubtitle="The equipment industry is changing. These challenges are reshaping who wins and who gets commoditized."
+      painSectionSubtitle="The asset manufacturing industry is changing. These challenges are reshaping who wins and who gets commoditized."
       painPoints={[
         {
           icon: <PackageIcon className="h-5 w-5" />,
@@ -86,9 +86,9 @@ export function ManufacturersPage() {
         },
         {
           eyebrow: "Recurring revenue layer",
-          title: "Launch equipment-as-a-service and premium monitoring tiers",
+          title: "Launch asset-as-a-service and premium monitoring tiers",
           description:
-            "White-label the Enerzyz platform as your OEM customer portal. Offer tiered subscriptions: basic monitoring, advanced analytics, predictive maintenance alerts, and autonomous optimization. Transform a $50K one-time equipment sale into a $50K + $500/month recurring relationship. Your installed base becomes an annuity business.",
+            "Partner up with Enerzyz to embed our solution in your product or offerings as your OEM customer portal. Offer tiered subscriptions: basic monitoring, advanced analytics, predictive maintenance alerts, and autonomous optimization. Transform a $50K one-time asset sale into a $50K + $500/month recurring relationship. Your installed base becomes an annuity business.",
           metric: "Software-powered revenue streams",
         },
         {
@@ -161,7 +161,7 @@ export function ManufacturersPage() {
 
       /* ─── CTA ─── */
       ctaHeadline="Make your next product line intelligent"
-      ctaDescription="Let our team show you how Enerzyz embeds into your equipment platform — from firmware to cloud dashboard. We'll model the recurring revenue opportunity and warranty savings for your product portfolio."
+      ctaDescription="Let our team show you how Enerzyz embeds into your asset platform — from firmware to cloud dashboard. We'll model the recurring revenue opportunity and warranty savings for your product portfolio."
     />
   );
 }

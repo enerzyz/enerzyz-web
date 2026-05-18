@@ -5,9 +5,9 @@ const SITE_URL = "https://enerzyz.com";
 const PAGE_URL = `${SITE_URL}/solutions/manufacturers`;
 
 export const metadata: Metadata = {
-  title: "For Equipment Manufacturers — Ship Smarter Connected Products | Enerzyz",
+  title: "For Asset Manufacturers — Ship Smarter Connected Products | Enerzyz",
   description:
-    "Enerzyz helps HVAC, inverter, BESS, compressor, generator, transformer and engine manufacturers embed predictive AI intelligence into products — reducing warranty costs 40%, unlocking 5-10× customer lifetime value, and creating recurring revenue from connected equipment.",
+    "Enerzyz helps HVAC, inverter, BESS, compressor, generator, transformer and engine asset manufacturers embed predictive AI intelligence into products — reducing warranty costs 40%, unlocking 5-10× customer lifetime value, and creating recurring revenue from connected assets.",
   keywords: [
     "chiller manufacturer IoT",
     "HVAC OEM connected product",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "For Equipment Manufacturers | Enerzyz",
+    title: "For Asset Manufacturers | Enerzyz",
     description:
       "Embed predictive AI into every unit you ship. 40% warranty cost reduction, 5-10× customer lifetime value, 100% field visibility.",
     siteName: "Enerzyz",
