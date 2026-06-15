@@ -16,7 +16,7 @@ export function ManufacturersPage() {
       /* ─── Hero ─── */
       eyebrow="For Equipment Manufacturers"
       headline="Your equipment, perpetually intelligent."
-      subheadline="Chiller, HVAC, inverter, BESS, pump, generator, and engine manufacturers compete on specs but customers choose on outcomes. Enerzyz OS lets you embed a predictive AI brain into every unit you ship, transforming one-time hardware sales into recurring, data-driven revenue streams."
+      subheadline="HVAC, Chiller, inverter, BESS, compressor, generator, and engine manufacturers compete on specs but customers choose on outcomes. Enerzyz OS lets you embed a predictive AI brain into every unit you ship, transforming one-time hardware sales into recurring, data-driven revenue streams."
       heroStats={[
         { value: "40%", label: "Warranty cost reduction" },
         { value: "5–10×", label: "Lifetime customer value" },
@@ -74,7 +74,7 @@ export function ManufacturersPage() {
           eyebrow: "Connected product platform",
           title: "Turn every unit into a smart, connected asset",
           description:
-            "Enerzyz provides embeddable firmware agents and cloud APIs that connect any equipment — chillers, VRFs, heat pumps, inverters, battery systems, gensets, pumps, AHUs — to a unified digital platform. Stream real-time telemetry (temperatures, pressures, currents, vibration, runtime hours) from the field and visualize fleet-wide performance from a single OEM dashboard.",
+            "Enerzyz provides embeddable firmware agents and cloud APIs that connect any equipment — chillers, VRFs, heat pumps, inverters, battery systems, gensets, compressors, motors — to a unified digital platform. Stream real-time telemetry (temperatures, pressures, currents, vibration, runtime hours) from the field and visualize fleet-wide performance from a single OEM dashboard.",
           metric: "Plug-and-play IoT integration",
         },
         {

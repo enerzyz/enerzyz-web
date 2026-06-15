@@ -21,11 +21,11 @@ const codeMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Enerzyz | Autopilot for Energy Assets — AI-Powered Building & Facility Optimization",
+    default: "Enerzyz — AI Operating System for Energy Assets",
     template: "%s | Enerzyz",
   },
   description:
-    "Enerzyz is the AI operating system for energy assets. Predictive optimization for HVAC, chillers, generators, BESS, pumps & more — cutting energy costs 30%+, extending asset life 25%+, and delivering autonomous facility management for commercial buildings, data centers, hospitals, and industrial plants.",
+    "AI operating system for energy assets. Cut energy costs 30%+, extend asset life 25%+, and hit net-zero targets — autonomously.",
   keywords: [
     "energy asset management",
     "AI building optimization",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "smart building platform",
     "facility management AI",
     "chiller optimization",
+    "HVAC optimization",
     "energy efficiency software",
     "building automation AI",
     "SCADA AI integration",
@@ -45,6 +46,10 @@ export const metadata: Metadata = {
     "energy asset autopilot",
     "predictive energy analytics",
     "net zero building technology",
+    "energy usage optimization",
+    "HVAC energy conservation",
+    "smart building",
+    "AI powered BMS",
     "ESG compliance automation",
     "equipment lifecycle management",
   ],
@@ -72,22 +77,13 @@ export const metadata: Metadata = {
     siteName: "Enerzyz",
     title: "Enerzyz | Autopilot for Energy Assets",
     description:
-      "AI operating system that makes energy assets self-optimizing. Cut energy costs 30%+, extend equipment life 25%+, and hit net-zero targets — autonomously.",
-    images: [
-      {
-        url: "/enerzyz-logo-long.png",
-        width: 1200,
-        height: 630,
-        alt: "Enerzyz — Autopilot for energy assets",
-      },
-    ],
+      "AI operating system for energy assets. Cut energy costs 30%+, extend asset life 25%+, and hit net-zero targets — autonomously.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Enerzyz | Autopilot for Energy Assets",
     description:
-      "AI operating system that makes energy assets self-optimizing. Cut energy costs 30%+, extend equipment life 25%+, and hit net-zero targets.",
-    images: ["/enerzyz-logo-long.png"],
+      "Cut energy costs 30%+, extend asset life 25%+, hit net-zero targets. AI-powered facility management.",
     creator: "@enerzyz",
     site: "@enerzyz",
   },

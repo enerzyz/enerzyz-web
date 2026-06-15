@@ -16,7 +16,7 @@ export function AssetOwnersPage() {
       /* ─── Hero ─── */
       eyebrow="For Asset Owners &amp; Facility Leaders"
       headline="Turn energy assets into high-performing, appreciating investments."
-      subheadline="Commercial buildings waste up to 50% on their operational expenses in managing the assets. Enerzyz OS turns your chillers, AHUs, boilers, pumps, and electrical systems into a self-optimizing fleet slashing opex, extending equipment life, and lifting Net Operating Income from day one."
+      subheadline="Commercial buildings waste up to 50% on their operational expenses in managing the assets. Enerzyz OS turns your electro-mechanical assets into a self-optimizing fleet slashing opex, extending equipment life, and lifting Net Operating Income from day one."
       heroStats={[
         { value: "30%+", label: "Energy waste eliminated" },
         { value: "25%+", label: "Asset life extended" },
@@ -32,7 +32,7 @@ export function AssetOwnersPage() {
           icon: <FlameIcon className="h-5 w-5" />,
           title: "Runaway energy costs",
           description:
-            "HVAC, chillers, and pumps account for 40–60% of a commercial building's operating budget. Without real-time optimization, you're burning cash around the clock — overpaying for demand peaks, running equipment at suboptimal load, and missing tariff arbitrage windows.",
+            "HVAC and other electrical systems account for 40–60% of a commercial building's operating budget. Without real-time optimization, you're burning cash around the clock — overpaying for demand peaks, running equipment at suboptimal load, and missing tariff arbitrage windows.",
         },
         {
           icon: <CogIcon className="h-5 w-5" />,
