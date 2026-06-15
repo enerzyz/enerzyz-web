@@ -21,13 +21,11 @@ export const metadata: Metadata = {
     description:
       "AI operating system that makes energy assets self-optimizing. Cut operational costs 30%+, extend equipment life 25%+, and hit net-zero targets — autonomously.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz — Autopilot for energy assets" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Enerzyz | Autopilot for Energy Assets",
     description: "AI operating system that makes energy assets self-optimizing.",
-    images: ["/enerzyz-logo-long.png"],
   },
 };
 

@@ -74,7 +74,7 @@ export function ManufacturersPage() {
           eyebrow: "Connected product platform",
           title: "Turn every unit into a smart, connected asset",
           description:
-            "Enerzyz provides embeddable firmware agents and cloud APIs that connect any equipment — chillers, VRFs, heat pumps, inverters, battery systems, gensets, pumps, AHUs — to a unified digital platform. Stream real-time telemetry (temperatures, pressures, currents, vibration, runtime hours) from the field and visualize fleet-wide performance from a single OEM dashboard.",
+            "Enerzyz provides embeddable firmware agents and cloud APIs that connect any equipment — chillers, VRFs, heat pumps, inverters, battery systems, gensets, compressors, motors — to a unified digital platform. Stream real-time telemetry (temperatures, pressures, currents, vibration, runtime hours) from the field and visualize fleet-wide performance from a single OEM dashboard.",
           metric: "Plug-and-play IoT integration",
         },
         {
