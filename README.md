@@ -1,20 +1,3 @@
-## Enerzyz marketing experience
-
-Enerzyz.com is now powered by a cinematic Next.js App Router experience that keeps the hero copy front-and-center while the brand story plays out through layered motion, glassmorphism, and glow-driven typography inspired by Juxta, The Interface, AlterAI, and AgentMail.
-
-### ✨ Highlights
-- Immersive hero with looping background video, neon typography, and animated metrics.
-- Early access CTA with kinetic sweeps and subtle parallax, echoing AlterAI's magnetic button treatment.
-- Orbit visual that showcases the Enerzyz control core with continuously rotating nodes.
-- Code-playground section that lights up while users hover, mirroring AgentMail's storytelling style.
-- Fully responsive layout leveraging Tailwind CSS v4 custom utilities and `framer-motion` choreography.
-
-### 🧱 Tech stack
-- Next.js 15 App Router (TypeScript)
-- Tailwind CSS v4 + custom utilities
-- `framer-motion` for smooth entry and orbital animations
-- Playwright for end-to-end smoke coverage
-
 ## Getting started
 
 Install dependencies (npm is configured for this project):

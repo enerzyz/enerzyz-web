@@ -127,6 +127,13 @@ export function SiteHeader() {
           </div>
 
           <Link
+            href="/case-studies"
+            className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:text-white"
+          >
+            Case Studies
+          </Link>
+
+          <Link
             href="/about"
             className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/70 transition hover:text-white"
           >
@@ -177,6 +184,13 @@ export function SiteHeader() {
                   <span className="mt-0.5 block text-[10px] text-white/40">{item.description}</span>
                 </Link>
               ))}
+              <Link
+                href="/case-studies"
+                onClick={() => setMobileOpen(false)}
+                className="mt-3 block py-3 text-sm font-medium text-white/80 transition hover:text-sky-300"
+              >
+                Case Studies
+              </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileOpen(false)}

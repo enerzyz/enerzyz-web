@@ -369,7 +369,7 @@ function WhatAreEnergyAssets() {
       </p>
       <p>
         Whether you&apos;re a facility owner trying to boost NOI, a service contractor
-        looking to eliminate blind truck rolls, or an equipment manufacturer aiming to
+        looking to eliminate blind truck rolls, or an asset manufacturer aiming to
         embed intelligence into your product line — understanding your energy assets is
         the first step toward making them self-optimizing.
       </p>
