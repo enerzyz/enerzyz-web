@@ -14,6 +14,16 @@ export type BlogArticle = {
  */
 export const articles: BlogArticle[] = [
   {
+    slug: "singapore-cooling-paradox-memory-driven-buildings",
+    title: "The Singapore Paradox: Why the World's Most Efficient Outlier Holds the Blueprint for a $2 Trillion Cooling Reset",
+    description:
+      "Singapore consumes 649 GJ per capita without extreme climate or domestic energy reserves — almost all of it for cooling. The real bottleneck isn't infrastructure; it's the absence of memory in control systems. Here's the data, the physics, and the AI architecture that turns cooling into the highest-ROI optimization opportunity on Earth.",
+    date: "2026-06-17",
+    readTime: "11 min read",
+    category: "Research & Strategy",
+    author: "Enerzyz Research",
+  },
+  {
     slug: "what-are-energy-assets-and-why-they-matter",
     title: "What Are Energy Assets And Why They're the Biggest Untapped Optimization Opportunity in Every Building",
     description:
