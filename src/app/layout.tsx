@@ -87,14 +87,6 @@ export const metadata: Metadata = {
     creator: "@enerzyz",
     site: "@enerzyz",
   },
-  icons: {
-    icon: [
-      { url: "/icon.png", type: "image/png", sizes: "192x192" },
-      { url: "/enerzyz-logo.png", type: "image/png", sizes: "32x32" },
-    ],
-    shortcut: "/icon.png",
-    apple: [{ url: "/icon.png", sizes: "180x180", type: "image/png" }],
-  },
   category: "Technology",
 };
 
