@@ -5,7 +5,7 @@ const SITE_URL = "https://enerzyz.com";
 const PAGE_URL = `${SITE_URL}/solutions/asset-operators`;
 
 export const metadata: Metadata = {
-  title: "For Asset Operators & Contractors — AI Super-Engineer Tools | Enerzyz",
+  title: "For Asset Operators & Contractors | AI Super-Engineer Tools",
   description:
     "Enerzyz transforms HVAC contractors, facility management companies, chiller specialists, electrical contractors, and energy service companies into AI-augmented super-engineers — with predictive diagnostics, agentic optimization, remote monitoring, and automated compliance reporting.",
   keywords: [

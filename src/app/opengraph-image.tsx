@@ -92,7 +92,7 @@ export default function OGImage() {
               [
                 ["30%+", "Energy Cost Reduction"],
                 ["25%+", "Longer Asset Life"],
-                ["95%+", "Model Accuracy"],
+                ["150+", "Sites Deployed"],
               ] as const
             ).map(([value, label]) => (
               <div

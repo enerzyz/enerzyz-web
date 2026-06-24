@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Enerzyz",
+  title: "Privacy Policy",
   description:
     "How Enerzyz collects, uses, retains, and protects personal data for customers, partners and visitors.",
   alternates: { canonical: "https://enerzyz.com/privacy-policy" },

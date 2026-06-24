@@ -237,7 +237,7 @@ export default function AboutPage() {
             Ready to make your facility sentient?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/60">
-            Join 120+ sites already running on Enerzyz.
+            Join 150+ sites already running on Enerzyz.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link

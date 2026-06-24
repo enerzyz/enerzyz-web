@@ -5,7 +5,7 @@ const SITE_URL = "https://enerzyz.com";
 const PAGE_URL = `${SITE_URL}/solutions/asset-owners`;
 
 export const metadata: Metadata = {
-  title: "For Asset Owners — Maximize ROI on Energy Assets | Enerzyz",
+  title: "For Asset Owners | Maximize ROI on Energy Assets",
   description:
     "Enerzyz helps commercial buildings, data centers, hospitals, hotels, retail chains, and industrial facilities extend asset life 25%+, cut energy waste 30%+, reduce unplanned outages 40%, and increase property valuations through predictive AI-driven asset management.",
   keywords: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "For Asset Owners — Maximize ROI on Energy Assets | Enerzyz",
+    title: "For Asset Owners | Maximize ROI on Energy Assets | Enerzyz",
     description:
       "Cut energy costs 30%+, extend equipment life 25%+, and lift Net Operating Income from day one with autonomous AI optimization for every energy asset you own.",
     siteName: "Enerzyz",

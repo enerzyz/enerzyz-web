@@ -10,7 +10,7 @@ import { SiteFooter } from "@/components/site-footer";
 import Affiliations from "@/components/affiliations";
 
 export const metadata: Metadata = {
-  title: "Enerzyz | Autopilot for Energy Assets — AI-Powered Building & Facility Optimization",
+  title: { absolute: "Enerzyz | Autopilot for Energy Assets" },
   description:
     "Enerzyz is the AI operating system for energy assets - providing autonomous facility management for commercial buildings, data centers and industrial plants.",
   alternates: { canonical: "https://enerzyz.com" },

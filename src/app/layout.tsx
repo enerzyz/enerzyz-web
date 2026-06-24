@@ -21,7 +21,7 @@ const codeMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Enerzyz — AI Operating System for Energy Assets",
+    default: "Enerzyz | AI Operating System for Energy Assets",
     template: "%s | Enerzyz",
   },
   description:
@@ -86,14 +86,6 @@ export const metadata: Metadata = {
       "Cut energy costs 30%+, extend asset life 25%+, hit net-zero targets. AI-powered facility management.",
     creator: "@enerzyz",
     site: "@enerzyz",
-  },
-  icons: {
-    icon: [
-      { url: "/icon.png", type: "image/png", sizes: "192x192" },
-      { url: "/enerzyz-logo.png", type: "image/png", sizes: "32x32" },
-    ],
-    shortcut: "/icon.png",
-    apple: [{ url: "/icon.png", sizes: "180x180", type: "image/png" }],
   },
   category: "Technology",
 };

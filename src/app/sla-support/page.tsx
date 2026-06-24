@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SLA & Support — Enerzyz",
+  title: "SLA & Support",
   description: "Service-level commitments and support for Enerzyz customers.",
   alternates: { canonical: "https://enerzyz.com/sla-support" },
 };
