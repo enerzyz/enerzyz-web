@@ -21,7 +21,7 @@ const codeMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Enerzyz — AI Operating System for Energy Assets",
+    default: "Enerzyz | AI Operating System for Energy Assets",
     template: "%s | Enerzyz",
   },
   description:

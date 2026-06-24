@@ -5,7 +5,7 @@ const SITE_URL = "https://enerzyz.com";
 const PAGE_URL = `${SITE_URL}/solutions/manufacturers`;
 
 export const metadata: Metadata = {
-  title: "For Asset Manufacturers — Ship Smarter Connected Products | Enerzyz",
+  title: "For Asset Manufacturers — Ship Smarter Connected Products",
   description:
     "Enerzyz helps HVAC, inverter, BESS, compressor, generator, transformer and engine asset manufacturers embed predictive AI intelligence into products — reducing warranty costs 40%, unlocking 5-10× customer lifetime value, and creating recurring revenue from connected assets.",
   keywords: [

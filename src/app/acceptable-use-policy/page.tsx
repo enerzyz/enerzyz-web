@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Acceptable Use Policy — Enerzyz",
+  title: "Acceptable Use Policy",
   description: "Rules and prohibited activities for using Enerzyz services.",
   alternates: { canonical: "https://enerzyz.com/acceptable-use-policy" },
 };

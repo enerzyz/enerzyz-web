@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BookDemoForm } from "@/components/book-demo-form";
 
 export const metadata: Metadata = {
-  title: "Book a Demo — See Enerzyz in Action | Enerzyz",
+  title: "Book a Demo | See Enerzyz in Action",
   description:
     "Schedule a live demo with Enerzyz engineers. See how AI-powered predictive optimization can cut energy costs 30%+, extend asset life 25%+, and automate facility operations for your buildings, data centers, or industrial plants.",
   keywords: [

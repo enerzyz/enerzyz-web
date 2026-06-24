@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AboutPage from "./about-page";
 
 export const metadata: Metadata = {
-  title: "About Enerzyz — The Team Behind Autonomous Energy Asset Management",
+  title: "About Enerzyz | The Team Behind Autonomous Energy Asset Management",
   description:
     "Enerzyz builds the AI operating system for energy assets. Learn about our mission to make every powered facility on Earth self-optimizing — backed by Stanford, NVIDIA, World Bank, ASHRAE, and Antler.",
   keywords: [

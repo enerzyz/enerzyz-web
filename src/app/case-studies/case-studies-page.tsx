@@ -41,7 +41,7 @@ const caseStudies = [
     challenge:
       "Rising energy asset management costs and regulatory pressures prompted the facility team to seek optimization across their HVAC, chilled water loop, and rooftop solar installation — all while keeping office occupants comfortable and operations uninterrupted.",
     approach:
-      "Enerzyz OS integrated with the existing Johnson Controls BMS via BACnet IP, and with solar inverters via API. A floor-by-floor rollout was coordinated with the Project Manager. Enerzyz ensured minimal compressor utilization and a thin neutral zone around set point of the chilled water loop by autonomously adjusting based on weather data and delta T acceleration, while simultaneously providing solar string anomaly detection, soiling insights, and inverter-level performance monitoring.",
+      "Enerzyz OS integrated with the existing BMS via BACnet IP, and with solar inverters via API. A floor-by-floor rollout was coordinated with the Project Manager. Enerzyz ensured minimal compressor utilization and a thin neutral zone around set point of the chilled water loop by autonomously adjusting based on weather data and delta T acceleration, while simultaneously providing solar string anomaly detection, soiling insights, and inverter-level performance monitoring.",
     assets: ["Air Handling Units (AHUs)", "Variable Air Valves (VAVs)", "Hot Water System", "Chilled Water System", "Solar Rooftop", "Battery Energy Storage"],
     period: "6 months — 2025",
     results: [

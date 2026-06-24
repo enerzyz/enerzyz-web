@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
       "Within 90 days of deploying Enerzyz across our portfolio, we saw a 28% reduction in energy spend and eliminated every single unplanned chiller shutdown. We are also tracking sustainability metrics for our entire portfolio through this OS.",
     name: "Director of Facility Operations",
     title: "Commercial Real Estate Portfolio",
-    company: "Large International Development Bank",
+    company: "International Development Organization",
     metric: "28% energy cost reduction",
   },
   {

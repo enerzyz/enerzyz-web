@@ -17,7 +17,7 @@ const solutions = [
     description: "Become a super-engineer with predictive, agentic tools",
   },
   {
-    label: "For Manufacturers",
+    label: "For Asset Manufacturers",
     href: "/solutions/manufacturers",
     description: "Ship smarter products and unlock recurring revenue",
   },

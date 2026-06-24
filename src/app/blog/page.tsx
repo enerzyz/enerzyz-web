@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Blog — Energy Asset Intelligence, Industry Insights & Best Practices",
+  title: "Blog | Energy Asset Intelligence, Industry Insights & Best Practices",
   description:
     "Explore the Enerzyz blog for deep-dives on energy asset management, predictive maintenance, AI-driven building optimization, HVAC efficiency, ESG compliance, and smart facility operations.",
   keywords: [

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Page Not Found | Enerzyz",
+  title: "Page Not Found",
   description: "The page you're looking for doesn't exist. Head back to the Enerzyz homepage.",
 };
 

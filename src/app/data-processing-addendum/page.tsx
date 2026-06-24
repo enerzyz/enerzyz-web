@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Data Processing Addendum | Enerzyz",
+  title: "Data Processing Addendum",
   description:
     "Enerzyz Data Processing Addendum (DPA) — the terms under which Enerzyz processes personal data on behalf of customers in connection with the Enerzyz Platform.",
   alternates: { canonical: "https://enerzyz.com/data-processing-addendum" },
@@ -71,7 +71,7 @@ const sections = [
     table: {
       headers: ["Sub-processor", "Service", "Hosting region"],
       rows: [
-        ["Amazon Web Services", "Cloud infrastructure and storage", "Customer's selected region (default: AWS Asia Pacific — Singapore)"],
+        ["Amazon Web Services", "Cloud infrastructure and storage", "Customer's selected region (default: AWS Asia Pacific — Singapore; US East — N. Virginia)"],
         ["Google Cloud", "Cloud infrastructure and managed data services", "Customer's selected region"],
         ["Enerzyz Affiliates", "Engineering, support, and customer success", "Singapore and jurisdictions where Enerzyz operates"],
         ["Global M2M connectivity provider", "Cellular (4G) fallback for edge devices", "Per network coverage"],
@@ -124,7 +124,7 @@ const sections = [
     id: "enterprise",
     title: "12. Enterprise DPA",
     content: [
-      "Enterprise customers requiring a countersigned DPA, data residency elections, additional jurisdiction-specific schedules, or custom security assessments should contact their Enerzyz account team or write to legal@enerzyz.com. A full DPA document (ENZ-LEGAL-DPA-001 v3.0) is available for execution.",
+      "Enterprise customers requiring a countersigned DPA, data residency elections, additional jurisdiction-specific schedules, or custom security assessments should contact their Enerzyz account team or write to legal@enerzyz.com.",
     ],
   },
 ];
@@ -138,8 +138,6 @@ export default function DataProcessingAddendum() {
         <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-sky-300/70">Enerzyz · Legal</p>
         <h1 className="mt-3 text-xl font-semibold text-white">Data Processing Addendum</h1>
         <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-white/35">
-          <span>ENZ-LEGAL-DPA-001</span>
-          <span>·</span>
           <span>Version 3.0</span>
           <span>·</span>
           <span>Effective June 2026</span>
@@ -207,7 +205,7 @@ export default function DataProcessingAddendum() {
 
       {/* Footer */}
       <div className="mt-14 border-t border-white/[0.06] pt-6 text-[11px] text-white/25">
-        <p>© 2026 Enerzyz Pte. Ltd. and its Affiliates. All rights reserved. · ENZ-LEGAL-DPA-001 v3.0 · For the full enterprise DPA or jurisdiction-specific schedules, contact <span className="text-white/40">legal@enerzyz.com</span></p>
+        <p>© 2026 Enerzyz. All rights reserved. · For the full enterprise DPA or jurisdiction-specific schedules, contact <span className="text-white/40">legal@enerzyz.com</span></p>
       </div>
     </main>
   );

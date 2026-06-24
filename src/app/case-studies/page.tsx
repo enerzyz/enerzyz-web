@@ -5,7 +5,7 @@ const SITE_URL = "https://enerzyz.com";
 const PAGE_URL = `${SITE_URL}/case-studies`;
 
 export const metadata: Metadata = {
-  title: "Case Studies — Real-World Results from Enerzyz | Enerzyz",
+  title: "Case Studies | Real-World Results from Enerzyz",
   description:
     "See measurable results from Enerzyz deployments: 25–30% energy savings, significant cost reduction, and near-zero operational disruptions — across hospitality and institutional buildings.",
   keywords: [

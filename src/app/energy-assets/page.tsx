@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "What Are Energy Assets? — Understanding HVAC, Chillers, Generators & More | Enerzyz",
+  title: "What Are Energy Assets? | Understanding HVAC, Chillers, Generators & More",
   description:
     "Energy assets are the engines, motors, pumps, batteries, chillers, and generators that power modern civilization. Learn how AI-driven management from Enerzyz can cut $8 trillion in global energy waste.",
   keywords: [
