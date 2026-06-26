@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     description:
       "60% fewer truck rolls, 3× faster fault resolution, 85%+ first-time fix rate. AI co-pilot for every technician, every job.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz for Asset Operators" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=For+Asset+Operators&subtitle=AI+super-engineer+tools+for+contractors+and+facility+teams.", width: 1200, height: 630, alt: "Enerzyz for Asset Operators" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "For Asset Operators | Enerzyz",
     description: "Every technician becomes a super-engineer with predictive, agentic AI tools.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=For+Asset+Operators&subtitle=AI+super-engineer+tools+for+contractors+and+facility+teams."],
   },
 };
 

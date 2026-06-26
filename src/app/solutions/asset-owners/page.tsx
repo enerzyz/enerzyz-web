@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     description:
       "Cut energy costs 30%+, extend equipment life 25%+, and lift Net Operating Income from day one with autonomous AI optimization for every energy asset you own.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz for Asset Owners" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=For+Asset+Owners&subtitle=Maximize+ROI+on+energy+assets+with+autonomous+AI+optimization.", width: 1200, height: 630, alt: "Enerzyz for Asset Owners" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "For Asset Owners | Enerzyz",
     description: "Autonomous AI that turns energy assets into high-performing, appreciating investments.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=For+Asset+Owners&subtitle=Maximize+ROI+on+energy+assets+with+autonomous+AI+optimization."],
   },
 };
 

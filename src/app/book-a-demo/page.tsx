@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     title: "Book a Demo | Enerzyz",
     description: "See how Enerzyz OS can cut energy costs and automate facility operations — live.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Book a Demo with Enerzyz" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=Book+a+Demo&subtitle=See+Enerzyz+in+action.+Live+demo+with+our+engineers.", width: 1200, height: 630, alt: "Book a Demo with Enerzyz" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Book a Demo | Enerzyz",
     description: "Schedule a live demo — see AI-powered energy asset optimization in action.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=Book+a+Demo&subtitle=See+Enerzyz+in+action.+Live+demo+with+our+engineers."],
   },
 };
 

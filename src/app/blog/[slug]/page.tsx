@@ -48,7 +48,7 @@ export async function generateMetadata({
       authors: [article.author],
       images: [
         {
-          url: "/enerzyz-logo-long.png",
+          url: `https://enerzyz.com/api/og?title=${encodeURIComponent(article.title)}&subtitle=${encodeURIComponent(article.description.slice(0, 110))}`,
           width: 1200,
           height: 630,
           alt: article.title,
@@ -59,7 +59,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: ["/enerzyz-logo-long.png"],
+      images: [`https://enerzyz.com/api/og?title=${encodeURIComponent(article.title)}&subtitle=${encodeURIComponent(article.description.slice(0, 110))}`],
     },
   };
 }

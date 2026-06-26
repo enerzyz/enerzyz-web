@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Enerzyz",
     images: [
       {
-        url: "/enerzyz-logo-long.png",
+        url: "https://enerzyz.com/api/og?title=Enerzyz+Blog&subtitle=Energy+asset+intelligence%2C+industry+insights+and+best+practices.",
         width: 1200,
         height: 630,
         alt: "Enerzyz Blog",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Blog | Enerzyz",
     description:
       "Industry insights on energy asset management, AI building optimization, and predictive maintenance.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=Enerzyz+Blog&subtitle=Energy+asset+intelligence%2C+industry+insights+and+best+practices."],
   },
 };
 
