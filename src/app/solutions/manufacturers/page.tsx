@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     description:
       "Embed predictive AI into every unit you ship. 40% warranty cost reduction, 5-10× customer lifetime value, 100% field visibility.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz for Manufacturers" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=For+Asset+Manufacturers&subtitle=Embed+predictive+AI+into+every+unit+you+ship.", width: 1200, height: 630, alt: "Enerzyz for Manufacturers" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "For Manufacturers | Enerzyz",
     description: "Transform one-time hardware sales into recurring, data-driven revenue streams with embedded AI.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=For+Asset+Manufacturers&subtitle=Embed+predictive+AI+into+every+unit+you+ship."],
   },
 };
 

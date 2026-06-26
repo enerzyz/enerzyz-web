@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     description:
       "The AI operating system for energy assets. Learn about our mission, affiliations, and the team making facilities self-optimizing.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "About Enerzyz" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=About+Enerzyz&subtitle=The+team+making+every+powered+facility+on+Earth+self-optimizing.", width: 1200, height: 630, alt: "About Enerzyz" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Enerzyz",
     description: "The AI operating system for energy assets.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=About+Enerzyz&subtitle=The+team+making+every+powered+facility+on+Earth+self-optimizing."],
   },
 };
 

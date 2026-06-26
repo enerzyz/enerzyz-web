@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     description:
       "25–30% energy savings, real cost reductions, and zero operational disruptions. See what Enerzyz delivers in the field.",
     siteName: "Enerzyz",
-    images: [{ url: "/enerzyz-logo-long.png", width: 1200, height: 630, alt: "Enerzyz Case Studies" }],
+    images: [{ url: "https://enerzyz.com/api/og?title=Case+Studies&subtitle=Real-world+results+from+Enerzyz+deployments+across+buildings.", width: 1200, height: 630, alt: "Enerzyz Case Studies" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Case Studies | Enerzyz",
     description: "Real-world results from Enerzyz deployments across buildings in Southeast Asia.",
-    images: ["/enerzyz-logo-long.png"],
+    images: ["https://enerzyz.com/api/og?title=Case+Studies&subtitle=Real-world+results+from+Enerzyz+deployments+across+buildings."],
   },
 };
 
