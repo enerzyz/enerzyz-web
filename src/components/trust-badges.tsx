@@ -47,8 +47,8 @@ const badges = [
     ),
   },
   {
-    title: "SOC 2 Type II",
-    description: "Audited controls for security, availability, and confidentiality.",
+    title: "Zero Trust Architecture",
+    description: "Every access request verified, nothing trusted by default.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
         <path d="M12 2L3 7v6c0 5.25 3.75 10.13 9 11.25C17.25 23.13 21 18.25 21 13V7l-9-5z" />

@@ -51,7 +51,7 @@ const sections = [
     id: "security",
     title: "5. Security",
     content: [
-      "Enerzyz maintains an information-security programme aligned to ISO/IEC 27001:2022, IEC 62443, the NIST Cybersecurity Framework 2.0, and the SOC 2 Trust Services Criteria. Key controls include:",
+      "Enerzyz maintains an information-security programme aligned to ISO/IEC 27001:2022, IEC 62443, and the NIST Cybersecurity Framework 2.0. Key controls include:",
     ],
     list: [
       "Outbound-only, mutually-authenticated integration — no inbound attack surface on the Customer's network.",
@@ -60,7 +60,7 @@ const sections = [
       "Zero standing access for Enerzyz engineering staff to Customer telemetry — just-in-time elevation with dual approval, time-bounded grants, and full audit logging.",
       "Per-device X.509 certificates with annual rotation and OCSP revocation.",
     ],
-    footer: "Enerzyz's ISO/IEC 27001:2022 certification is in progress. Enerzyz's SOC 2 report is available to Customers on request under a confidentiality undertaking. A Security and Data Protection White Paper with architecture diagrams, data-flow descriptions, and control summaries is available to support vendor assurance.",
+    footer: "Enerzyz's ISO/IEC 27001:2022 certification is in progress. A Security and Data Protection White Paper with architecture diagrams, data-flow descriptions, and control summaries is available to support vendor assurance.",
   },
   {
     id: "subprocessors",
@@ -116,7 +116,7 @@ const sections = [
     id: "audits",
     title: "11. Audits and Compliance",
     content: [
-      "Enerzyz will make available information reasonably necessary to demonstrate compliance with this DPA, primarily through third-party certifications, audit reports, and security documentation. Upon request and subject to a confidentiality undertaking, Enerzyz will provide its SOC 2 report and ISO/IEC 27001 certification status.",
+      "Enerzyz will make available information reasonably necessary to demonstrate compliance with this DPA, primarily through third-party certifications, audit reports, and security documentation. Upon request and subject to a confidentiality undertaking, Enerzyz will provide its ISO/IEC 27001 certification status.",
       "Where documentation is insufficient to demonstrate compliance, the Customer (or an independent auditor that is not a competitor of Enerzyz) may conduct an audit no more than once per 12-month period, on reasonable prior written notice and in a manner that does not disrupt Enerzyz's operations.",
     ],
   },
